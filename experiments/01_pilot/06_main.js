@@ -17,7 +17,10 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
-            loop([question, answer, conclusion], 6),
+            //loop([question, answer, conclusion], 3),
+            question,
+            answer,
+            conclusion,
             post_test,
             thanks,
         ],
@@ -36,7 +39,7 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                conclusion.name,
+                post_test.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",

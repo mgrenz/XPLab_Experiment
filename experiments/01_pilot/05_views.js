@@ -106,7 +106,7 @@ const thanks = magpieViews.view_generator("thanks", {
 const question = magpieViews.view_generator(
   'forced_choice',
   {
-    trials: 6,
+    trials: 2,
     name: 'question',
     data: question_text,
   },
@@ -126,7 +126,7 @@ const question = magpieViews.view_generator(
 const answer = magpieViews.view_generator(
   'self_paced_reading',
   {
-    trials: 6,
+    trials: 2,
     name: 'answer',
     data: answer_text,
   },
@@ -147,7 +147,7 @@ const answer = magpieViews.view_generator(
 const conclusion = magpieViews.view_generator(
   'rating_scale',
   {
-    trials: 6,
+    trials: 2,
     name: 'conclusion',
     data: conclusion_text,
   },
