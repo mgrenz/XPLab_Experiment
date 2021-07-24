@@ -17,10 +17,7 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
-            //loop([question, answer, conclusion], 3),
-            question,
-            answer,
-            conclusion,
+            magpieUtils.views.loop([question, answer, conclusion], 3),
             post_test,
             thanks,
         ],

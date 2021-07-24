@@ -23,14 +23,22 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `This is a sample introduction view.
+  text: `A warm welcome to this experiment and a heartfelt
+        thank-you for participating.
             <br />
             <br />
-            The introduction view welcomes the participant and gives general information
-            about the experiment. You are in the <strong>${coin}</strong> group.
+            Taking part in this experiment is voluntary and
+            you can quit at any moment without having to expect
+            negative consequences.
             <br />
             <br />
-            This is a minimal experiment with one forced choice view. It can serve as a starting point for programming your own experiment.`,
+            Your data will be stored anonymously and will be used
+            for scientific purposes only. Therefore, we might share
+            the data with other scientists.
+            <br />
+            <br />
+            Proceeding signifies that you read, understood and agree
+            to this terms.`,
   buttonText: 'begin the experiment'
 });
 
@@ -39,10 +47,30 @@ const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'General Instructions',
-  text: `This is a sample instructions view.
+  text: `The setting of this experiment is a courtroom with a jusge and
+   a witness present.
+           <br />
+           <br />
+           In the following you are presented with a sequence of three
+           screens.
             <br />
             <br />
-            Tell your participants what they are to do here.`,
+            The first screen displays a conversation between the judge and
+            the witness, which you are asked to read at your own pace.
+            <br />
+            <br />
+            The second screen will display the answer of the witness. You are
+            again asked to read the answer but this time you can only read one
+            word at a time. In order to reveal the next word, press SPACE.
+            <br />
+            <br />
+            On the third screen, a conclusion of the judge will be displayed.
+            We ask you to read the conclusion and indicate afterwards for how
+            justifiable you preceive the judges conclusion.
+            <br /r>
+            <br /r>
+            You will be presented with 36 trials. Please try to avoid breaks
+            and minimize distractions in your immediate surrounding.`,
   buttonText: 'go to trials'
 });
 
@@ -106,9 +134,10 @@ const thanks = magpieViews.view_generator("thanks", {
 const question = magpieViews.view_generator(
   'forced_choice',
   {
-    trials: 2,
+    trials: 1,
     name: 'question',
-    data: question_text,
+    //just shuffling without respect to condition
+    data: _.shuffle(question_text),
   },
   {
     answer_container_generator: function (config, CT) {
@@ -126,9 +155,10 @@ const question = magpieViews.view_generator(
 const answer = magpieViews.view_generator(
   'self_paced_reading',
   {
-    trials: 2,
+    trials: 1,
     name: 'answer',
-    data: answer_text,
+    //just shuffling without respect to condition
+    data: _.shuffle(answer_text),
   },
   //chang eanswer format from button press choice to one click answer
   {
@@ -147,9 +177,10 @@ const answer = magpieViews.view_generator(
 const conclusion = magpieViews.view_generator(
   'rating_scale',
   {
-    trials: 2,
+    trials: 1,
     name: 'conclusion',
-    data: conclusion_text,
+    //just shuffling without respect to condition
+    data: _.shuffle(conclusion_text),
   },
   {
     answer_container_generator: function(config, CT) {
