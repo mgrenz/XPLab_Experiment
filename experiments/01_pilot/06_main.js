@@ -17,7 +17,7 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
-            magpieUtils.views.loop([question, answer, conclusion], question_ordered.length),
+            magpieUtils.views.loop([question, answer, conclusion], 18), //18 = 1 item block + 1 filler block; normal: all_questions.length
             post_test,
             thanks,
         ],

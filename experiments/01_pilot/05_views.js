@@ -138,7 +138,7 @@ const question = magpieViews.view_generator(
   {
     trials: 1,
     name: 'question',
-    data: question_ordered,
+    data: all_questions,
   },
   {
     answer_container_generator: function (config, CT) {
@@ -158,8 +158,7 @@ const answer = magpieViews.view_generator(
   {
     trials: 1,
     name: 'answer',
-    data: answers_ordered,
-    QUD: 'The witness response:',
+    data: all_answers,
   },
   //chang eanswer format from button press choice to one click answer
   {
@@ -180,7 +179,7 @@ const conclusion = magpieViews.view_generator(
   {
     trials: 1,
     name: 'conclusion',
-    data: conclusion_ordered,
+    data: all_conclusions,
   },
   {
     answer_container_generator: function(config, CT) {
