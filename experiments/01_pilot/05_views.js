@@ -106,6 +106,8 @@ const thanks = magpieViews.view_generator("thanks", {
   prolificConfirmText: 'Press the button'
 });
 
+
+
 /** trial (magpie's Trial Type Views) below
 
 * Obligatory properties
@@ -130,24 +132,13 @@ const thanks = magpieViews.view_generator("thanks", {
 */
 
 
-
-
-
-// There are many more templates available:
-// forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
-// key_press, self_paced_reading and self_paced_reading_rating_scale
-
-
-
 //QUD view : only reading
-const question_view = magpieViews.view_generator(
+const question = magpieViews.view_generator(
   'forced_choice',
   {
-    trials: main_trials.length,
-    name: 'question-view',
-    //just shuffling without respect to condition
-    //data: _.shuffle(question_text),
-    data: main_trials,
+    trials: 1,
+    name: 'question',
+    data: question_ordered,
   },
   {
     answer_container_generator: function (config, CT) {
@@ -162,13 +153,13 @@ const question_view = magpieViews.view_generator(
 
 
 //MOD view: self_paced_reading with button press and time measurement
-const answer_view = magpieViews.view_generator(
+const answer = magpieViews.view_generator(
   'self_paced_reading',
   {
     trials: 1,
-    name: 'answer_view',
-    //just shuffling without respect to condition
-    data: main_trials,
+    name: 'answer',
+    data: answers_ordered,
+    QUD: 'The witness response:',
   },
   //chang eanswer format from button press choice to one click answer
   {
@@ -184,14 +175,12 @@ const answer_view = magpieViews.view_generator(
 
 
 //Conclusion with Likert scale rating with custom likert scale
-const conclusion_view = magpieViews.view_generator(
+const conclusion = magpieViews.view_generator(
   'rating_scale',
   {
     trials: 1,
-    name: 'conclusion_view',
-    //just shuffling without respect to condition
-    data: main_trials,
-
+    name: 'conclusion',
+    data: conclusion_ordered,
   },
   {
     answer_container_generator: function(config, CT) {
@@ -213,3 +202,8 @@ const conclusion_view = magpieViews.view_generator(
     }
   }
 );
+
+
+// There are many more templates available:
+// forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
+// key_press, self_paced_reading and self_paced_reading_rating_scale

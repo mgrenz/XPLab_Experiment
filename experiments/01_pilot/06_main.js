@@ -17,7 +17,7 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
-            magpieUtils.views.loop([question_view, answer_view, conclusion_view], 2),
+            magpieUtils.views.loop([question, answer, conclusion], question_ordered.length),
             post_test,
             thanks,
         ],
@@ -36,10 +36,12 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                post_test.name,
+                question.name,
+                answer.name,
+                conclusion.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
-            style: "separate",
+            style: "default",
             width: 100
         }
     });

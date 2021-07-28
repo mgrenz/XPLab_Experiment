@@ -1,643 +1,261 @@
 // In this file you can specify the trial data for your experiment
 
 
-//Vorlage: https://github.com/magpie-ea/magpie-speaker-knowledge
 
-
-let raw_trial_information = [
-  {
-    ID: 1,
-    question_info: {
-      polar: 'The judge asks: "question1polar" <br /r> The witness responds:',
-      howmany: 'The judge asks: "question1howmany" <br /r> The witness responds:',
-      what: 'The judge asks: "question1what" <br /r> The witness responds:',
-      option1: 'Next',
-    },
-    answer_info: {
-      comp: 'This | is | an | example | textcomp',
-      sup: 'This | is | an | example | textsup',
-      option1: 'next'
-    },
-    conclusion_info: {
-      question: 'Based on this, the judge concludes: <br /> <br /> "conclusion1"  <br /> <br /> How justified is the judge in drawing that conclusion?',
+const conclusion_text = [
+    {
+      id:1,
+      QUD: 'Based on this, the judge concludes:',
+      question: 'The witness doesn’t know exactly how many coins she had in her hand.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    },
-  },
-  {
-    ID: 2,
-    question_info: {
-      polar: 'The judge asks: "question2polar" <br /r> The witness responds:',
-      howmany: 'The judge asks: "question2howmany" <br /r> The witness responds:',
-      what: 'The judge asks: "question2what" <br /r> The witness responds:',
-      option1: 'Next',
-    },
-    answer_info: {
-      comp: 'This | is | an | example | textcomp2',
-      sup: 'This | is | an | example | textsup2',
-      option1: 'next'
-    },
-    conclusion_info: {
-      question: 'Based on this, the judge concludes: <br /> <br /> "conclusion2"  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    }, //0
+    {
+      id:2,
+      QUD: 'Based on this, the judge concludes:',
+      question: 'The witness doesn’t know exactly how many pills she took.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    },
-  },
-  {
-    ID: 3,
-    question_info: {
-      polar: 'The judge asks: "question3polar" <br /r> The witness responds:',
-      howmany: 'The judge asks: "question3howmany" <br /r> The witness responds:',
-      what: 'The judge asks: "question3what" <br /r> The witness responds:',
-      option1: 'Next',
-    },
-    answer_info: {
-      comp: 'This | is | an | example | textcomp3',
-      sup: 'This | is | an | example | textsup3',
-      option1: 'next'
-    },
-    conclusion_info: {
-      question: 'Based on this, the judge concludes: <br /> <br /> "conclusion3"  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    }, //1
+    {
+      id:3,
+      QUD: 'Based on this, the judge concludes:',
+      question: 'The witness doesn’t know exactly how many shots they heard.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    },
-  },
-  {
-    ID: 4,
-    question_info: {
-      polar: 'The judge asks: "question4polar" <br /r> The witness responds:',
-      howmany: 'The judge asks: "question4howmany" <br /r> The witness responds:',
-      what: 'The judge asks: "question4what" <br /r> The witness responds:',
-      option1: 'Next',
-    },
-    answer_info: {
-      comp: 'This | is | an | example | textcomp4',
-      sup: 'This | is | an | example | textsup4',
-      option1: 'next'
-    },
-    conclusion_info: {
-      question: 'Based on this, the judge concludes: <br /> <br /> "conclusion4"  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    }, //2
+    {
+      id:4,
+      QUD: 'Based on this, the judge concludes:',
+      question: 'The witness doesn’t know exactly how many thieves there were in the bank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    },
-  },
-  {
-    ID: 5,
-    question_info: {
-      polar: 'The judge asks: "question5polar" <br /r> The witness responds:',
-      howmany: 'The judge asks: "question5howmany" <br /r> The witness responds:',
-      what: 'The judge asks: "question5what" <br /r> The witness responds:',
-      option1: 'Next',
-    },
-    answer_info: {
-      comp: 'This | is | an | example | textcomp5',
-      sup: 'This | is | an | example | textsup5',
-      option1: 'next'
-    },
-    conclusion_info: {
-      question: 'Based on this, the judge concludes: <br /> <br /> "conclusion5"  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    }, //3
+    {
+      id:5,
+      QUD: 'Based on this, the judge concludes:',
+      question: 'The witness doesn’t know exactly how many shots they drank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    },
-  },
-  {
-    ID: 6,
-    question_info: {
-      polar: 'The judge asks: "question6polar" <br /r> The witness responds:',
-      howmany: 'The judge asks: "question6howmany" <br /r> The witness responds:',
-      what: 'The judge asks: "question6what" <br /r> The witness responds:',
-      option1: 'Next',
-    },
-    answer_info: {
-      comp: 'This | is | an | example | textcomp6',
-      sup: 'This | is | an | example | textsup6',
-      option1: 'next'
-    },
-    conclusion_info: {
-      question: 'Based on this, the judge concludes: <br /> <br /> "conclusion6"  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    }, //4
+    {
+      id:6,
+      QUD: 'Based on this, the judge concludes:',
+      question: 'The witness doesn’t know exactly how many cars he crashed with during the accident.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    },
-  },
-];
+    } //5
+  ];
 
-let raw_filler_trial_information = [
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 7,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 8,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 9,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 10,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 11,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 12,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 13,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 14,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 15,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 16,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 17,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 18,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 19,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 20,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 21,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 22,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 36,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 6,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 66,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },{
-    type: "filler",
-    ID: 1,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 2,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 3,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 4,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 5,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  },
-  {
-    type: "filler",
-    ID: 72,
-    question: 'fillerquestion',
-    answer: 'filleranswer',
-    conclusion: 'fillerconclusion',
-  }
-];
+const answer_text = [
+    {
+      id: 1,
+      condition: 'COMP',
+      sentence: 'I | had | less | than | ten | coins | in | my | hand.',
+      option1: 'next'
+    }, //0
+    {
+      id: 2,
+      condition: 'COMP',
+      sentence: 'I | had | taken | less | than | ten | pills.',
+      option1: 'next'
+    }, //1
+    {
+      id: 3,
+      condition: 'COMP',
+      sentence: ' I | heard | less | than | ten | shots.',
+      option1: 'next'
+    }, //2
+    {
+      id: 4,
+      condition: 'COMP',
+      sentence: 'I | saw | less | than | ten | thieves | in | the | bank',
+      option1: 'next'
+    }, //3
+    {
+      id: 5,
+      condition: 'COMP',
+      sentence: 'I | had | less | than | ten | shots.',
+      option1: 'next'
+    }, //4
+    {
+      id: 6,
+      condition: 'COMP',
+      sentence: 'I | crashed | with | less | than | ten | cars | during | the | accident.',
+      option1: 'next'
+    }, //5
+    {
+      id: 1,
+      condition: 'SUP',
+      sentence: 'I | had | at | most | ten | coins | in | my | hand.',
+      option1: 'next'
+    }, //6
+    {
+      id:2,
+      condition: 'SUP',
+      sentence: 'I | had | taken | at | most | ten | pills.',
+      option1: 'next'
+    }, //7
+    {
+      id:3,
+      condition: 'SUP',
+      sentence: 'I | heard | at | most | ten | shots.',
+      option1: 'next'
+    }, //8
+    {
+      id:4,
+      condition: 'SUP',
+      sentence: 'I | saw | at | most | ten | thieves | in | the | bank.',
+      option1: 'next'
+    }, //9
+    {
+      id:5,
+      condition: 'SUP',
+      sentence: 'I | had | at | most | ten | shots.',
+      option1: 'next'
+    }, //10
+    {
+      id:6,
+      condition: 'SUP',
+      sentence: 'I | crashed | with | at | most | ten | cars | during | the | accident.',
+      option1: 'next'
+    } //11
+  ];
 
-//Latin Square:
-//3 Question conditions: POLAR, HOWMANY, WHAT
-//2 Answer conditions: SUP, COMP
+const question_text = [
+    {
+      id:1,
+      QUD: 'The judge asks:',
+      condition: 'POLAR',
+      question: 'Were there {at most / less than} ten coins in your hand? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //0
+    {
+      id:1,
+      QUD: 'The judge asks:',
+      condition: 'WHAT',
+      question: 'What was in your hand?<br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //1
+    {
+      id:1,
+      QUD: 'The judge asks:',
+      condition: 'HOWMANY',
+      question: 'How many coins did you have in your hand?<br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //2
+    {
+      id:2,
+      QUD: 'The judge asks:',
+      condition: 'POLAR',
+      question: 'Did you take {at most / less than} ten pills?<br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //3
+    {
+      id:2,
+      QUD: 'The judge asks:',
+      condition: 'WHAT',
+      question: 'What did you do?<br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //4
+    {
+      id:2,
+      QUD: 'The judge asks:',
+      condition: 'HOWMANY',
+      question: 'How many pills did you take?<br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //5
+    {
+      id:3,
+      QUD: 'The judge asks:',
+      condition: 'POLAR',
+      question: 'Did you hear {at most / less than} ten shots? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //6
+    {
+      id:3,
+      QUD: 'The judge asks:',
+      condition: 'WHAT',
+      question: 'What did you hear? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //7
+    {
+      id:3,
+      QUD: 'The judge asks:',
+      condition: 'HOWMANY',
+      question: 'How many shots did you hear? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //8
+    {
+      id:4,
+      QUD: 'The judge asks:',
+      condition: 'POLAR',
+      question: 'Did you count {at most / less than} ten thieves in the bank? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //9
+    {
+      id:4,
+      QUD: 'The judge asks:',
+      condition: 'WHAT',
+      question: 'What did you count? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //10
+    {
+      id:4,
+      QUD: 'The judge asks:',
+      condition: 'HOWMANY',
+      question: 'How many thieves did you count in the bank? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //11
+    {
+        id:5,
+        QUD: 'The judge asks:',
+        condition: 'POLAR',
+        question: 'Did you drink {at most / less than} ten shots that night? <br /> <br /> The witness responds:',
+        option1: 'Next',
+      }, //12
+      {
+        id:5,
+        QUD: 'The judge asks:',
+        condition: 'WHAT',
+        question: 'What did you drink? <br /> <br /> The witness responds:',
+        option1: 'Next',
+      }, //13
+      {
+        id:5,
+        QUD: 'The judge asks:',
+        condition: 'HOWMANY',
+        question: 'How many shots did you drink that night? <br /> <br /> The witness responds:',
+        option1: 'Next',
+      }, //14
+      {
+        id:6,
+        QUD: 'The judge asks:',
+        condition: 'POLAR',
+        question: 'Did you crash with {at most / less than} ten cars during the accident?  <br /> <br /> The witness responds:',
+        option1: 'Next',
+      }, //15
+      {
+        id:6,
+        QUD: 'The judge asks:',
+        condition: 'WHAT',
+        question: 'What did you crash with?  <br /> <br /> The witness responds:',
+        option1: 'Next',
+      }, //16
+      {
+        id:6,
+        QUD: 'The judge asks:',
+        condition: 'HOWMANY',
+        question: 'How many cars did you crash with during the accident?  <br /> <br /> The witness responds:',
+        option1: 'Next',
+      }, //17
+  ];
 
-// A = POLAR, COMP
-// B = HOWMANY, COMP
-// C = WHAT, COMP
-// D = POLAR, SUP
-// E = HOWMANY, SUP
-// F = WHAT, SUP
+// 2 answer cond: sup , comp
+// 3 question cond: polar, howmany, what
+// 6 lists
 
+// latin square:
 // C E D B A F
 // D C A E F B
 // A B F D E C
@@ -645,234 +263,144 @@ let raw_filler_trial_information = [
 // F A B C D E
 // B F E A C D
 
-const latin_square_lists = [
-  [
-    {
-      question_condition: 'what',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'sup'
-    }
-  ], //L1
-  [
-    {
-      question_condition: 'polar',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'comp'
-    }
-  ], //L2
-  [
-    {
-      question_condition: 'polar',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'comp'
-    }
-  ], //L3
-  [
-    {
-      question_condition: 'howmany',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'comp'
-    }
-  ], //L4
-  [
-    {
-      question_condition: 'what',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'sup'
-    }
-  ], //L5
-  [
-    {
-      question_condition: 'howmany',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'SUP'
-    },
-    {
-      question_condition: 'howmany',
-      answer_condition: 'sup'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'what',
-      answer_condition: 'comp'
-    },
-    {
-      question_condition: 'polar',
-      answer_condition: 'sup'
-    }
-  ] //L6
+// A = sup, polar
+// B = sup, howmany
+// C = sup, what
+// D = comp, polar
+// E = comp, howmany
+// F = comp, what
+
+const question_ordered = [
+  question_text[1],
+  question_text[5],
+  question_text[6],
+  question_text[11],
+  question_text[12],
+  question_text[16],
+  //l1
+  question_text[0],
+  question_text[4],
+  question_text[6],
+  question_text[11],
+  question_text[13],
+  question_text[17],
+  //l2
+  question_text[0],
+  question_text[5],
+  question_text[7],
+  question_text[9],
+  question_text[14],
+  question_text[16],
+  //l3
+  question_text[2],
+  question_text[3],
+  question_text[7],
+  question_text[10],
+  question_text[14],
+  question_text[15],
+  //l4
+  question_text[1],
+  question_text[3],
+  question_text[8],
+  question_text[10],
+  question_text[12],
+  question_text[17],
+  //l5
+  question_text[2],
+  question_text[4],
+  question_text[8],
+  question_text[9],
+  question_text[13],
+  question_text[15],
+  //l6
 ];
 
+const answers_ordered = [
+  answer_text[6],
+  answer_text[1],
+  answer_text[2],
+  answer_text[9],
+  answer_text[10],
+  answer_text[5],
+  //l1
+  answer_text[0],
+  answer_text[7],
+  answer_text[8],
+  answer_text[2],
+  answer_text[4],
+  answer_text[11],
+  //l2
+  answer_text[6],
+  answer_text[7],
+  answer_text[2],
+  answer_text[3],
+  answer_text[4],
+  answer_text[11],
+  //l3
+  answer_text[0],
+  answer_text[1],
+  answer_text[8],
+  answer_text[3],
+  answer_text[10],
+  answer_text[11],
+  //l4
+  answer_text[0],
+  answer_text[7],
+  answer_text[8],
+  answer_text[9],
+  answer_text[4],
+  answer_text[5],
+  //l5
+  answer_text[6],
+  answer_text[1],
+  answer_text[2],
+  answer_text[9],
+  answer_text[10],
+  answer_text[5],
+  //l6
+];
 
-
-//create list of trials for participant by randomly choosing 1 list
-//abwechselnd nicht randomly!!!!!!!
-
-const trial_list = _.flatten(_.sampleSize(latin_square_lists, 3));
-
-// shuffle latin square lists and flatten new rdered list
-const shuffled_list = _.flatten(_.shuffle(latin_square_lists));
-
-// fills in a single trial based on question and answer type
-const create_trial = function (trial, args) {
-  return {
-    type: "main",
-    question_type: args.question_condition, //qestion condition: POLAR/HOWMANY/WHAT
-    answer_type: args.answer_condition, //answer condition: SUP/COMP
-    question_text: trial.question_info[args.question_condition], //question text
-    answer_text: trial.answer_info[args.answer_condition], //answer text
-    conclusion_text: trial.conclusion_info[trial.question], //conclusion text
-    option1: 'next', //option for answer and question screen
-    optionLeft: 'not justifiable', //option left conclusio screen likert scale
-    optionRight: 'justifiable', //option right conclusion screen likert scale
-    ID: trial.ID
-  };
-};
-
-//fills in filler trial
-const create_filler_trial = function (trial) {
-  return {
-    ID: trial.ID,
-    type: trial.type,
-    question_text: trial.question,
-    answer_text: trial.answer,
-    continuation: trial.continuation,
-    conclusion_text: trial.conclusion,
-    option1: 'next',
-    optionLeft: 'not justifiable',
-    optionRight: 'justifiable'
-  };
-};
-
-// fill in all trial templates in selected list from latin square design with the corresponding text from the raw_trial_info and shuffle
-const trial_info = trial_list.map(function (e) {
-  trial = create_trial(raw_trial_information[_.indexOf(trial_list, e)], e);
-  return trial;
-});
-
-console.log(trial);
-console.log(trial_info);
-
-// fill in all filler trial templates in the list with the corresponding text from the raw_trial_info and shuffle
-const filler_trial_info = raw_filler_trial_information.map(function (e) {
-  trial = create_filler_trial(
-    raw_filler_trial_information[_.indexOf(raw_filler_trial_information, e)],
-    e
-  );
-  return trial;
-});
-
-//use all fillers
-const filler_trials = _.shuffle(filler_trial_info);
-
-// console.log(filler_trial_info);
-console.log(filler_trials);
-// put main trials and filler trials together in one array
-var main_trials = _.shuffle([...trial_info, ...filler_trials]); // .slice(0, 10);; filler_trial_info originally
-// console.log("before");
-console.log(main_trials);
-
-//shuffle fillers
-//slice it into 6 pieces (a 12 items)
-//concatenate trial lists and filler lists abwechselnd
+const conclusion_ordered = [
+  conclusion_text[0],
+  conclusion_text[1],
+  conclusion_text[2],
+  conclusion_text[3],
+  conclusion_text[4],
+  conclusion_text[5],
+  //l1
+  conclusion_text[0],
+  conclusion_text[1],
+  conclusion_text[2],
+  conclusion_text[3],
+  conclusion_text[4],
+  conclusion_text[5],
+  //l2
+  conclusion_text[0],
+  conclusion_text[1],
+  conclusion_text[2],
+  conclusion_text[3],
+  conclusion_text[4],
+  conclusion_text[5],
+  //l3
+  conclusion_text[0],
+  conclusion_text[1],
+  conclusion_text[2],
+  conclusion_text[3],
+  conclusion_text[4],
+  conclusion_text[5],
+  //l4
+  conclusion_text[0],
+  conclusion_text[1],
+  conclusion_text[2],
+  conclusion_text[3],
+  conclusion_text[4],
+  conclusion_text[5],
+  //l5
+  conclusion_text[0],
+  conclusion_text[1],
+  conclusion_text[2],
+  conclusion_text[3],
+  conclusion_text[4],
+  conclusion_text[5],
+  //l6
+];
