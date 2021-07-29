@@ -4,6 +4,7 @@
 
 const conclusion_text = [
     {
+      type: 'main',
       id:1,
       QUD: 'Based on this, the judge concludes:',
       question: 'The witness doesn’t know exactly how many coins she had in her hand.  <br /> <br /> How justified is the judge in drawing that conclusion?',
@@ -208,47 +209,47 @@ const question_text = [
       option1: 'Next',
     }, //11
     {
-        id:5,
-        QUD: 'The judge asks:',
-        condition: 'POLAR',
-        question: 'Did you drink {at most / less than} ten shots that night? <br /> <br /> The witness responds:',
-        option1: 'Next',
-      }, //12
-      {
-        id:5,
-        QUD: 'The judge asks:',
-        condition: 'WHAT',
-        question: 'What did you drink? <br /> <br /> The witness responds:',
-        option1: 'Next',
-      }, //13
-      {
-        id:5,
-        QUD: 'The judge asks:',
-        condition: 'HOWMANY',
-        question: 'How many shots did you drink that night? <br /> <br /> The witness responds:',
-        option1: 'Next',
-      }, //14
-      {
-        id:6,
-        QUD: 'The judge asks:',
-        condition: 'POLAR',
-        question: 'Did you crash with {at most / less than} ten cars during the accident?  <br /> <br /> The witness responds:',
-        option1: 'Next',
-      }, //15
-      {
-        id:6,
-        QUD: 'The judge asks:',
-        condition: 'WHAT',
-        question: 'What did you crash with?  <br /> <br /> The witness responds:',
-        option1: 'Next',
-      }, //16
-      {
-        id:6,
-        QUD: 'The judge asks:',
-        condition: 'HOWMANY',
-        question: 'How many cars did you crash with during the accident?  <br /> <br /> The witness responds:',
-        option1: 'Next',
-      }, //17
+      id:5,
+      QUD: 'The judge asks:',
+      condition: 'POLAR',
+      question: 'Did you drink {at most / less than} ten shots that night? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //12
+    {
+      id:5,
+      QUD: 'The judge asks:',
+      condition: 'WHAT',
+      question: 'What did you drink? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //13
+    {
+      id:5,
+      QUD: 'The judge asks:',
+      condition: 'HOWMANY',
+      question: 'How many shots did you drink that night? <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //14
+    {
+      id:6,
+      QUD: 'The judge asks:',
+      condition: 'POLAR',
+      question: 'Did you crash with {at most / less than} ten cars during the accident?  <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //15
+    {
+      id:6,
+      QUD: 'The judge asks:',
+      condition: 'WHAT',
+      question: 'What did you crash with?  <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //16
+    {
+      id:6,
+      QUD: 'The judge asks:',
+      condition: 'HOWMANY',
+      question: 'How many cars did you crash with during the accident?  <br /> <br /> The witness responds:',
+      option1: 'Next',
+    }, //17
   ];
 
 
@@ -256,10 +257,11 @@ const question_text = [
 
 const filler_question = [
   {
-    id:1 ,
+    type: 'filler',
+    id:7,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you eat {at most / less than} ten slices of bread?  <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -764,9 +766,10 @@ const filler_question = [
 
 const filler_answer = [
   {
-    id:1,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    type: 'filler',
+    id:7,
+    condition: 'SUP',
+    sentence: 'I | ate | at | most | ten | slices | of | bread.',
     option1: 'next'
   }, //
   {
@@ -1259,10 +1262,10 @@ const filler_answer = [
 
 const filler_conclusion = [
   {
-    id:1,
-    condition: 'filler',
+    type: 'filler',
+    id:7,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many slices of bread they ate.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0

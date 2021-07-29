@@ -47,7 +47,7 @@ const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'General Instructions',
-  text: `The setting of this experiment is a courtroom with a jusge and
+  text: `The setting of this experiment is a courtroom with a judge and
    a witness present.
            <br />
            <br />
