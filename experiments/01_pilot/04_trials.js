@@ -12,6 +12,7 @@ const conclusion_text = [
       optionRight: 'strongly justifiable',
     }, //0
     {
+      type: 'main',
       id:2,
       QUD: 'Based on this, the judge concludes:',
       question: 'The witness doesn’t know exactly how many pills she took.  <br /> <br /> How justified is the judge in drawing that conclusion?',
@@ -19,6 +20,7 @@ const conclusion_text = [
       optionRight: 'strongly justifiable',
     }, //1
     {
+      type: 'main',
       id:3,
       QUD: 'Based on this, the judge concludes:',
       question: 'The witness doesn’t know exactly how many shots they heard.  <br /> <br /> How justified is the judge in drawing that conclusion?',
@@ -26,6 +28,7 @@ const conclusion_text = [
       optionRight: 'strongly justifiable',
     }, //2
     {
+      type: 'main',
       id:4,
       QUD: 'Based on this, the judge concludes:',
       question: 'The witness doesn’t know exactly how many thieves there were in the bank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
@@ -33,6 +36,7 @@ const conclusion_text = [
       optionRight: 'strongly justifiable',
     }, //3
     {
+      type: 'main',
       id:5,
       QUD: 'Based on this, the judge concludes:',
       question: 'The witness doesn’t know exactly how many shots they drank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
@@ -40,6 +44,7 @@ const conclusion_text = [
       optionRight: 'strongly justifiable',
     }, //4
     {
+      type: 'main',
       id:6,
       QUD: 'Based on this, the judge concludes:',
       question: 'The witness doesn’t know exactly how many cars he crashed with during the accident.  <br /> <br /> How justified is the judge in drawing that conclusion?',
@@ -50,72 +55,84 @@ const conclusion_text = [
 
 const answer_text = [
     {
+      type: 'main',
       id: 1,
       condition: 'COMP',
       sentence: 'I | had | less | than | ten | coins | in | my | hand.',
       option1: 'next'
     }, //0
     {
+      type: 'main',
       id: 2,
       condition: 'COMP',
       sentence: 'I | had | taken | less | than | ten | pills.',
       option1: 'next'
     }, //1
     {
+      type: 'main',
       id: 3,
       condition: 'COMP',
       sentence: ' I | heard | less | than | ten | shots.',
       option1: 'next'
     }, //2
     {
+      type: 'main',
       id: 4,
       condition: 'COMP',
       sentence: 'I | saw | less | than | ten | thieves | in | the | bank',
       option1: 'next'
     }, //3
     {
+      type: 'main',
       id: 5,
       condition: 'COMP',
       sentence: 'I | had | less | than | ten | shots.',
       option1: 'next'
     }, //4
     {
+      type: 'main',
       id: 6,
       condition: 'COMP',
       sentence: 'I | crashed | with | less | than | ten | cars | during | the | accident.',
       option1: 'next'
     }, //5
     {
+      type: 'main',
       id: 1,
       condition: 'SUP',
       sentence: 'I | had | at | most | ten | coins | in | my | hand.',
       option1: 'next'
     }, //6
     {
+      type: 'main',
       id:2,
       condition: 'SUP',
       sentence: 'I | had | taken | at | most | ten | pills.',
       option1: 'next'
     }, //7
     {
+      type: 'main',
       id:3,
       condition: 'SUP',
       sentence: 'I | heard | at | most | ten | shots.',
       option1: 'next'
     }, //8
     {
+      type: 'main',
       id:4,
       condition: 'SUP',
       sentence: 'I | saw | at | most | ten | thieves | in | the | bank.',
       option1: 'next'
     }, //9
     {
+      type: 'main',
       id:5,
       condition: 'SUP',
       sentence: 'I | had | at | most | ten | shots.',
       option1: 'next'
     }, //10
     {
+      type: 'main',
       id:6,
       condition: 'SUP',
       sentence: 'I | crashed | with | at | most | ten | cars | during | the | accident.',
@@ -125,6 +142,7 @@ const answer_text = [
 
 const question_text = [
     {
+      type: 'main',
       id:1,
       QUD: 'The judge asks:',
       condition: 'POLAR',
@@ -132,6 +150,7 @@ const question_text = [
       option1: 'Next',
     }, //0
     {
+      type: 'main',
       id:1,
       QUD: 'The judge asks:',
       condition: 'WHAT',
@@ -139,6 +158,7 @@ const question_text = [
       option1: 'Next',
     }, //1
     {
+      type: 'main',
       id:1,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
@@ -146,6 +166,7 @@ const question_text = [
       option1: 'Next',
     }, //2
     {
+      type: 'main',
       id:2,
       QUD: 'The judge asks:',
       condition: 'POLAR',
@@ -153,6 +174,7 @@ const question_text = [
       option1: 'Next',
     }, //3
     {
+      type: 'main',
       id:2,
       QUD: 'The judge asks:',
       condition: 'WHAT',
@@ -160,6 +182,7 @@ const question_text = [
       option1: 'Next',
     }, //4
     {
+      type: 'main',
       id:2,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
@@ -167,6 +190,7 @@ const question_text = [
       option1: 'Next',
     }, //5
     {
+      type: 'main',
       id:3,
       QUD: 'The judge asks:',
       condition: 'POLAR',
@@ -174,6 +198,7 @@ const question_text = [
       option1: 'Next',
     }, //6
     {
+      type: 'main',
       id:3,
       QUD: 'The judge asks:',
       condition: 'WHAT',
@@ -181,6 +206,7 @@ const question_text = [
       option1: 'Next',
     }, //7
     {
+      type: 'main',
       id:3,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
@@ -188,6 +214,7 @@ const question_text = [
       option1: 'Next',
     }, //8
     {
+      type: 'main',
       id:4,
       QUD: 'The judge asks:',
       condition: 'POLAR',
@@ -195,6 +222,7 @@ const question_text = [
       option1: 'Next',
     }, //9
     {
+      type: 'main',
       id:4,
       QUD: 'The judge asks:',
       condition: 'WHAT',
@@ -202,6 +230,7 @@ const question_text = [
       option1: 'Next',
     }, //10
     {
+      type: 'main',
       id:4,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
@@ -209,6 +238,7 @@ const question_text = [
       option1: 'Next',
     }, //11
     {
+      type: 'main',
       id:5,
       QUD: 'The judge asks:',
       condition: 'POLAR',
@@ -216,6 +246,7 @@ const question_text = [
       option1: 'Next',
     }, //12
     {
+      type: 'main',
       id:5,
       QUD: 'The judge asks:',
       condition: 'WHAT',
@@ -223,6 +254,7 @@ const question_text = [
       option1: 'Next',
     }, //13
     {
+      type: 'main',
       id:5,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
@@ -230,6 +262,7 @@ const question_text = [
       option1: 'Next',
     }, //14
     {
+      type: 'main',
       id:6,
       QUD: 'The judge asks:',
       condition: 'POLAR',
@@ -237,6 +270,7 @@ const question_text = [
       option1: 'Next',
     }, //15
     {
+      type: 'main',
       id:6,
       QUD: 'The judge asks:',
       condition: 'WHAT',
@@ -244,6 +278,7 @@ const question_text = [
       option1: 'Next',
     }, //16
     {
+      type: 'main',
       id:6,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
@@ -260,215 +295,245 @@ const filler_question = [
     type: 'filler',
     id:7,
     QUD: 'The judge asks:',
+    condition: 'WHAT',
+    question: 'What did you eat?  <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:7,
+    QUD: 'The judge asks:',
+    condition: 'HOWMANY',
+    question: 'How many slices of bread did you eat? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:7,
+    QUD: 'The judge asks:',
     condition: 'POLAR',
-    question: 'Did you eat {at most / less than} ten slices of bread?  <br /> <br /> The witness responds:',
+    question: 'Did you eat {at most / less than} ten slices of bread? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:2 ,
+    type: 'filler',
+    id:8,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you see {at most / less than} ten balloons flying in the air? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:3 ,
+    type: 'filler',
+    id:8,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you see? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:4 ,
+    type: 'filler',
+    id:8,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many balloons did you see flying in the air? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:5 ,
+    type: 'filler',
+    id:9,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you find {at most / less than} ten corpses in the office? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:6 ,
+    type: 'filler',
+    id:9,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you find? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:7 ,
+    type: 'filler',
+    id:9,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many corpses did you find in the office? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:8 ,
+    type: 'filler',
+    id:10,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: ' Did you help {at most / less than} ten children to escape the fire? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:9 ,
+    type: 'filler',
+    id:10,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you do? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:10 ,
+    type: 'filler',
+    id:10,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:11 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:12 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many children did you help to escape the fire? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
 
   {
-    id:13 ,
+    type: 'filler',
+    id:11,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you hear {at most / less than} ten women shouting at this event? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:14 ,
+    type: 'filler',
+    id:11,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you hear at this event? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:15 ,
+    type: 'filler',
+    id:11,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many women did you hear shouting at this event? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:16 ,
+    type: 'filler',
+    id:12,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you hear {at most / less than} ten animals howling in the forest? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:17 ,
+    type: 'filler',
+    id:12,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you hear in the forest? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:18 ,
+    type: 'filler',
+    id:12,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many animals did you hear howling in the forest? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:19 ,
+    type: 'filler',
+    id:13,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you kiss {at most / less than} ten strangers at the party? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:20 ,
+    type: 'filler',
+    id:13,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you do at the party? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:21 ,
+    type: 'filler',
+    id:13,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many strangers did you kiss at the party? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:22 ,
+    type: 'filler',
+    id:14,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you take {at most / less than} ten pictures of the assault? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:23 ,
+    type: 'filler',
+    id:14,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you do during the assault? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:24 ,
+    type: 'filler',
+    id:14,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many pictures of the assault did you take? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:25 ,
+    type: 'filler',
+    id:15,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you use {at most / less than} ten kinds of drugs that night? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:26 ,
+    type: 'filler',
+    id:15,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you use that night? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:27 ,
+    type: 'filler',
+    id:15,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many kinds of drugs did you use that night? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:28 ,
+    type: 'filler',
+    id:16,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you hike {at most / less than} ten kilometers up a mountain? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:29 ,
+    type: 'filler',
+    id:16,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you do? <br /> <br /> The witness responds:',
     option1: 'Next',
   },
   {
-    id:30 ,
+    type: 'filler',
+    id:16,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many kilometers did you hike? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:31 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -476,6 +541,7 @@ const filler_question = [
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:32 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -483,6 +549,7 @@ const filler_question = [
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:33 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -490,6 +557,7 @@ const filler_question = [
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:34 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -497,6 +565,7 @@ const filler_question = [
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:35 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -504,6 +573,7 @@ const filler_question = [
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:36 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -511,6 +581,7 @@ const filler_question = [
     option1: 'Next',
   }, //0
   {
+    type: 'filler',
     id:37 ,
     QUD: 'The judge asks:',
     condition: 'filler',
@@ -773,491 +844,137 @@ const filler_answer = [
     option1: 'next'
   }, //
   {
-    id:2,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:3,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:4,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:5,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:6,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
     id:7,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'COMP',
+    sentence: 'I | ate | less | than | ten | slices | of | bread.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
     id:8,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | balloons | flying | in | the | air.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:8,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | balloons | flying | in | the | air.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:9,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | corpses | in | the | office.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:9,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | corpses | in | the | office.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:10,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | helped | at | most | ten | children | to | escape | the | fire.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:10,
+    condition: 'COMP',
+    sentence: 'I | helped | less | than | ten | children | to | escape | the | fire.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:11,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | women | shouting | this | event. ',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:11,
+    condition: 'COMP',
+    sentence: 'I | heard | less| than | ten | women | shouting | this | event.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:12,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | animals | howling | in | the | forest.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:12,
+    condition: 'COMP',
+    sentence: 'I | heard | less | than | ten | animals | howling | in | the | forest.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:13,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | kissed | at | most | ten | strangers | at | the | party.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:13,
+    condition: 'COMP',
+    sentence: 'I | kissed | less | than | ten | strangers | at | the | party.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:14,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | took | at | most | ten | pictures | of | the | assault.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:14,
+    condition: 'COMP',
+    sentence: 'I | took | less | than | ten | pictures | of the | assault. ',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:15,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: 'I | used | at | most | ten | kinds | of | drugs | that | night.',
     option1: 'next'
   }, //
   {
+    type: 'filler',
+    id:15,
+    condition: 'COMP',
+    sentence: ' I | used | less | than | ten | kinds | of | drugs | that | night.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
     id:16,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    condition: 'SUP',
+    sentence: ' I | hiked | at | most | ten | kilometers | up | a | mountain.',
     option1: 'next'
   }, //
   {
-    id:17,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
+    type: 'filler',
+    id:16,
+    condition: 'COMP',
+    sentence: 'I | hiked | less | than | ten | kilometers | up | a | mountain.',
     option1: 'next'
   }, //
-  {
-    id:18,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:19,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:20,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:21,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:22,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:23,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:24,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:25,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:26,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:27,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:28,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:29,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:30,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:31,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:32,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:33,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:34,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:35,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:36,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:37,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:38,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:39,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:40,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:41,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:42,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:43,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:44,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:45,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:46,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:47,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:48,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:49,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:40,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:41,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:42,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:43,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:44,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:45,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:46,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:47,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:48,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:49,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:50,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:51,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:52,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:53,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:54,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:55,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:56,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:57,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:58,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:59,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:60,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:61,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }, //
-  {
-    id:62,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:63,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:64,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:65,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:66,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:67,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:68,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:69,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:70,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:71,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  },
-  {
-    id:72,
-    condition: 'filler',
-    sentence: 'filler | sentence .',
-    option1: 'next'
-  }
 ];
 
 const filler_conclusion = [
@@ -1270,573 +987,79 @@ const filler_conclusion = [
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:2,
-    condition: 'filler',
+    type: 'filler',
+    id:8,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many balloons they saw flying in the air .  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:3,
-    condition: 'filler',
+    type: 'filler',
+    id:9,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many corpses they saw in the office.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:4,
-    condition: 'filler',
+    type: 'filler',
+    id:10,
+
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many children they helped to escape the fire.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:5,
-    condition: 'filler',
+    type: 'filler',
+    id:11,
+
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many women they heard shouting at this event.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //4
   {
-    id:6,
-    condition: 'filler',
+    type: 'filler',
+    id:12,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many animals they heard howling in the forest.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:7,
-    condition: 'filler',
+    type: 'filler',
+    id:13,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many strangers they kissed at the party.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:8,
-    condition: 'filler',
+    type: 'filler',
+    id:14,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many pictures they took of the assault.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
   {
-    id:9,
-    condition: 'filler',
+    type: 'filler',
+    id:15,
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many types of drugs they used that night.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //8
   {
-    id:10,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:11,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:12,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:13,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:14,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:15,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
+    type: 'filler',
     id:16,
-    condition: 'filler',
     QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many kilometers they hiked up a mountain.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
-  {
-    id:17,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:18,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:19,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:20,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:21,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:22,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:23,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:24,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:25,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:26,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:27,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:28,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:29,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:30,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:31,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:32,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:33,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:34,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:35,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:36,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:37,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:38,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:39,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:40,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:41,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:42,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:43,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:44,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:45,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:46,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:47,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:48,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:49,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:50,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:51,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:52,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:53,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:54,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:55,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:56,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:57,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:58,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:59,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:60,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:61,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:62,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:63,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:64,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:65,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:66,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:67,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:68,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:69,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:70,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:71,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    id:72,
-    condition: 'filler',
-    QUD: 'Based on this, the judge concludes:',
-    question: 'filler conclusion  <br /> <br /> How justified is the judge in drawing that conclusion?',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  } //0
 ];
 
 //use latin square design to create 6 trial lists
