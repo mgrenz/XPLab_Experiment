@@ -69,7 +69,7 @@ const instructions = magpieViews.view_generator("instructions", {
             justifiable you preceive the judges conclusion.
             <br /r>
             <br /r>
-            You will be presented with 36 trials. Please try to avoid breaks
+            You will be presented with 108 trials. Please try to avoid breaks
             and minimize distractions in your immediate surrounding.`,
   buttonText: 'go to trials'
 });
@@ -138,7 +138,7 @@ const question = magpieViews.view_generator(
   {
     trials: 1,
     name: 'question',
-    data: all_questions,
+    data: all_questions_raw,
   },
   {
     answer_container_generator: function (config, CT) {
@@ -158,7 +158,7 @@ const answer = magpieViews.view_generator(
   {
     trials: 1,
     name: 'answer',
-    data: all_answers,
+    data: all_answers_raw,
   },
   //chang eanswer format from button press choice to one click answer
   {
@@ -179,7 +179,7 @@ const conclusion = magpieViews.view_generator(
   {
     trials: 1,
     name: 'conclusion',
-    data: all_conclusions,
+    data: all_conclusions_raw,
   },
   {
     answer_container_generator: function(config, CT) {

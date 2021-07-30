@@ -295,7 +295,7 @@ const filler_question = [
     id:7,
     QUD: 'The judge asks:',
     condition: 'WHAT',
-    question: 'What did you eat?  <br /> <br /> The witness responds:',
+    question: 'What did you eat with cheese?  <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -303,7 +303,7 @@ const filler_question = [
     id:7,
     QUD: 'The judge asks:',
     condition: 'HOWMANY',
-    question: 'How many slices of bread did you eat? <br /> <br /> The witness responds:',
+    question: 'How many slices of bread did you eat with cheese? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -311,7 +311,15 @@ const filler_question = [
     id:7,
     QUD: 'The judge asks:',
     condition: 'POLAR',
-    question: 'Did you eat {at most / less than} ten slices of bread? <br /> <br /> The witness responds:',
+    question: 'Did you eat {at most / less than} ten slices of bread with cheese? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:7,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you eat ten slices of bread with cheese? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -327,7 +335,7 @@ const filler_question = [
     id:8,
     QUD: 'The judge asks:',
     condition: 'WHAT',
-    question: 'What did you see? <br /> <br /> The witness responds:',
+    question: 'What did you see flying in the air? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -336,6 +344,14 @@ const filler_question = [
     QUD: 'The judge asks:',
     condition: 'HOWMANY',
     question: 'How many balloons did you see flying in the air? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:8,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you see ten balloons flying in the air? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -351,7 +367,7 @@ const filler_question = [
     id:9,
     QUD: 'The judge asks:',
     condition: 'WHAT',
-    question: 'What did you find? <br /> <br /> The witness responds:',
+    question: 'What did you findin the office? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -360,6 +376,14 @@ const filler_question = [
     QUD: 'The judge asks:',
     condition: 'HOWMANY',
     question: 'How many corpses did you find in the office? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:9,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you find ten corpses in the office? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -375,7 +399,7 @@ const filler_question = [
     id:10,
     QUD: 'The judge asks:',
     condition: 'WHAT',
-    question: 'What did you do? <br /> <br /> The witness responds:',
+    question: 'What did you do while escaping the fire? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -386,7 +410,14 @@ const filler_question = [
     question: 'How many children did you help to escape the fire? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
-
+  {
+    type: 'filler',
+    id:10,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you help children to escape the fire? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
   {
     type: 'filler',
     id:11,
@@ -409,6 +440,14 @@ const filler_question = [
     QUD: 'The judge asks:',
     condition: 'HOWMANY',
     question: 'How many women did you hear shouting at this event? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:11,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you hear women shouting at this event? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -437,6 +476,14 @@ const filler_question = [
   }, //0
   {
     type: 'filler',
+    id:12,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you hear animals howling in the forest? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
     id:13,
     QUD: 'The judge asks:',
     condition: 'POLAR',
@@ -457,6 +504,14 @@ const filler_question = [
     QUD: 'The judge asks:',
     condition: 'HOWMANY',
     question: 'How many strangers did you kiss at the party? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:13,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you kiss strangers at the party? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -485,10 +540,18 @@ const filler_question = [
   }, //0
   {
     type: 'filler',
+    id:14,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you take pictures of the assault? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
     id:15,
     QUD: 'The judge asks:',
     condition: 'POLAR',
-    question: 'Did you use {at most / less than} ten kinds of drugs that night? <br /> <br /> The witness responds:',
+    question: 'Did you use {at most / less than} ten different types of drugs that night? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -504,7 +567,15 @@ const filler_question = [
     id:15,
     QUD: 'The judge asks:',
     condition: 'HOWMANY',
-    question: 'How many kinds of drugs did you use that night? <br /> <br /> The witness responds:',
+    question: 'How many different types of drugs did you use that night? <br /> <br /> The witness responds:',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler',
+    id:15,
+    QUD: 'The judge asks:',
+    condition: 'DID',
+    question: 'Did you use ten different types of drugs that night? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
@@ -520,7 +591,7 @@ const filler_question = [
     id:16,
     QUD: 'The judge asks:',
     condition: 'WHAT',
-    question: 'What did you do? <br /> <br /> The witness responds:',
+    question: 'What did you do up a mountain? <br /> <br /> The witness responds:',
     option1: 'Next',
   },
   {
@@ -533,303 +604,73 @@ const filler_question = [
   }, //0
   {
     type: 'filler',
-    id:31 ,
+    id:16,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'DID',
+    question: 'Did you hike ten kilometers up a mountain? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
     type: 'filler',
-    id:32 ,
+    id:17,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you see {at most / less than} ten lollipops in the drawer? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
     type: 'filler',
-    id:33 ,
+    id:17,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you see in the drawer? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
     type: 'filler',
-    id:34 ,
+    id:17,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many lollipops did you see in the drawer? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
     type: 'filler',
-    id:35 ,
+    id:17,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'DID',
+    question: 'Did you see ten lollipops in the drawer? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
     type: 'filler',
-    id:36 ,
+    id:18,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'POLAR',
+    question: 'Did you feed {at most / less than} ten times an animal in the zoo? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
     type: 'filler',
-    id:37 ,
+    id:18,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'WHAT',
+    question: 'What did you feed in the zoo? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:38 ,
+    type: 'filler',
+    id:18,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'HOWMANY',
+    question: 'How many times did you feed an animal in the zoo? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
   {
-    id:39 ,
+    id:18,
     QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  },
-  {
-    id:40 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:41 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:42 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:43 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:44 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:45 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:46 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:47 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:48 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:49 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  },
-  {
-    id:50 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:51 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:52 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:53 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:54 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:55 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:56 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:57 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:58 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:59 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //5x
-  {
-    id:60 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:61 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:62 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:63 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:64 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:65 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:66 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:67 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:68 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:69 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //6x
-  {
-    id:70 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:71 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
-    option1: 'Next',
-  }, //0
-  {
-    id:72 ,
-    QUD: 'The judge asks:',
-    condition: 'filler',
-    question: 'filler <br /> <br /> The witness responds:',
+    condition: 'DID',
+    question: 'Did you feed ten times an animal in the zoo? <br /> <br /> The witness responds:',
     option1: 'Next',
   }, //0
 ];
@@ -839,13 +680,13 @@ const filler_answer = [
     type: 'filler',
     id:7,
     condition: 'SUP',
-    sentence: 'I | ate | at | most | ten | slices | of | bread.',
+    sentence: 'I | ate | at | most | ten | slices | of | bread | with | cheese.',
     option1: 'next'
   }, //
   {
     id:7,
     condition: 'COMP',
-    sentence: 'I | ate | less | than | ten | slices | of | bread.',
+    sentence: 'I | ate | less | than | ten | slices | of | bread | with | cheese.',
     option1: 'next'
   }, //
   {
@@ -894,14 +735,14 @@ const filler_answer = [
     type: 'filler',
     id:11,
     condition: 'SUP',
-    sentence: 'I | heard | at | most | ten | women | shouting | this | event. ',
+    sentence: 'I | heard | at | most | ten | women | shouting | at | this | event. ',
     option1: 'next'
   }, //
   {
     type: 'filler',
     id:11,
     condition: 'COMP',
-    sentence: 'I | heard | less| than | ten | women | shouting | this | event.',
+    sentence: 'I | heard | less| than | ten | women | shouting | at | this | event.',
     option1: 'next'
   }, //
   {
@@ -950,14 +791,14 @@ const filler_answer = [
     type: 'filler',
     id:15,
     condition: 'SUP',
-    sentence: 'I | used | at | most | ten | kinds | of | drugs | that | night.',
+    sentence: 'I | used | at | most | ten | different | types | of | drugs | that | night.',
     option1: 'next'
   }, //
   {
     type: 'filler',
     id:15,
     condition: 'COMP',
-    sentence: ' I | used | less | than | ten | kinds | of | drugs | that | night.',
+    sentence: ' I | used | less | than | ten | different | types | of | drugs | that | night.',
     option1: 'next'
   }, //
   {
@@ -974,6 +815,34 @@ const filler_answer = [
     sentence: 'I | hiked | less | than | ten | kilometers | up | a | mountain.',
     option1: 'next'
   }, //
+  {
+    type: 'filler',
+    id:17,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | lollipops | in | the | drawer.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
+    id:17,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | lollipops | in | the | drawer.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
+    id:18,
+    condition: 'SUP',
+    sentence: 'I | fed | at | most | ten | times | an | animals | in | the | zoo.',
+    option1: 'next'
+  }, //
+  {
+    type: 'filler',
+    id:18,
+    condition: 'COMP',
+    sentence: 'I | fed | less | than | times | an | animals | in | the | zoo.',
+    option1: 'next'
+  }, //
 ];
 
 const filler_conclusion = [
@@ -981,7 +850,7 @@ const filler_conclusion = [
     type: 'filler',
     id:7,
     QUD: 'Based on this, the judge concludes:',
-    question: 'The witness doesn’t know exactly how many slices of bread they ate.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many slices of bread they ate with cheese.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
@@ -989,7 +858,7 @@ const filler_conclusion = [
     type: 'filler',
     id:8,
     QUD: 'Based on this, the judge concludes:',
-    question: 'The witness doesn’t know exactly how many balloons they saw flying in the air .  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many balloons they saw flying in the air.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
@@ -1047,7 +916,7 @@ const filler_conclusion = [
     type: 'filler',
     id:15,
     QUD: 'Based on this, the judge concludes:',
-    question: 'The witness doesn’t know exactly how many types of drugs they used that night.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    question: 'The witness doesn’t know exactly how many different types of drugs they used that night.  <br /> <br /> How justified is the judge in drawing that conclusion?',
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //8
@@ -1059,7 +928,346 @@ const filler_conclusion = [
     optionLeft: 'not justifiable at all',
     optionRight: 'strongly justifiable',
   }, //0
+  {
+    type: 'filler',
+    id:17,
+    QUD: 'Based on this, the judge concludes:',
+    question: 'The witness does know exactly how many lollipops they saw in the drawer.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    optionLeft: 'not justifiable at all',
+    optionRight: 'strongly justifiable',
+  }, //0
+  {
+    type: 'filler',
+    id:18,
+    QUD: 'Based on this, the judge concludes:',
+    question: 'The witness doesn’t know exactly how many animals they fed in the zoo.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+    optionLeft: 'not justifiable at all',
+    optionRight: 'strongly justifiable',
+  }, //0
 ];
+
+//unshuffled lists
+///items
+const raw_question = [
+  question_text[0],
+  question_text[1],
+  question_text[2],
+  question_text[0],
+  question_text[1],
+  question_text[2],
+  //item1
+  question_text[3],
+  question_text[4],
+  question_text[5],
+  question_text[3],
+  question_text[4],
+  question_text[5],
+  //item2
+  question_text[6],
+  question_text[7],
+  question_text[8],
+  question_text[6],
+  question_text[7],
+  question_text[8],
+  //item3
+  question_text[9],
+  question_text[10],
+  question_text[11],
+  question_text[9],
+  question_text[10],
+  question_text[11],
+  //item4
+  question_text[12],
+  question_text[13],
+  question_text[14],
+  question_text[12],
+  question_text[13],
+  question_text[14],
+  //item5
+  question_text[15],
+  question_text[16],
+  question_text[17],
+  question_text[15],
+  question_text[16],
+  question_text[17],
+  //item6
+];
+
+const raw_answer = [
+  answer_text[0],
+  answer_text[0],
+  answer_text[0],
+  answer_text[6],
+  answer_text[6],
+  answer_text[6],
+  //item1
+  answer_text[1],
+  answer_text[1],
+  answer_text[1],
+  answer_text[7],
+  answer_text[7],
+  answer_text[7],
+  //item2
+  answer_text[2],
+  answer_text[2],
+  answer_text[2],
+  answer_text[8],
+  answer_text[8],
+  answer_text[8],
+  //item3
+  answer_text[3],
+  answer_text[3],
+  answer_text[3],
+  answer_text[9],
+  answer_text[9],
+  answer_text[9],
+  //item4
+  answer_text[4],
+  answer_text[4],
+  answer_text[4],
+  answer_text[10],
+  answer_text[10],
+  answer_text[10],
+  //item5
+  answer_text[5],
+  answer_text[5],
+  answer_text[5],
+  answer_text[11],
+  answer_text[11],
+  answer_text[11],
+  //item6
+];
+
+const raw_conclusion = [
+  conclusion_text[0],
+  conclusion_text[0],
+  conclusion_text[0],
+  conclusion_text[0],
+  conclusion_text[0],
+  conclusion_text[0],
+  //item1
+  conclusion_text[1],
+  conclusion_text[1],
+  conclusion_text[1],
+  conclusion_text[1],
+  conclusion_text[1],
+  conclusion_text[1],
+  //item2
+  conclusion_text[2],
+  conclusion_text[2],
+  conclusion_text[2],
+  conclusion_text[2],
+  conclusion_text[2],
+  conclusion_text[2],
+  //item3
+  conclusion_text[3],
+  conclusion_text[3],
+  conclusion_text[3],
+  conclusion_text[3],
+  conclusion_text[3],
+  conclusion_text[3],
+  //item4
+  conclusion_text[4],
+  conclusion_text[4],
+  conclusion_text[4],
+  conclusion_text[4],
+  conclusion_text[4],
+  conclusion_text[4],
+  //item5
+  conclusion_text[5],
+  conclusion_text[5],
+  conclusion_text[5],
+  conclusion_text[5],
+  conclusion_text[5],
+  conclusion_text[5],
+  //item6
+];
+//fillers
+const filler_raw_question = [
+  filler_question[0],
+  filler_question[1],
+  filler_question[2],
+  filler_question[3],
+  filler_question[0],
+  filler_question[1],
+  filler_question[2],
+  filler_question[3],
+  //id7
+  filler_question[4],
+  filler_question[5],
+  filler_question[6],
+  filler_question[7],
+  filler_question[4],
+  filler_question[5],
+  filler_question[6],
+  filler_question[7],
+  //id8
+  filler_question[8],
+  filler_question[9],
+  filler_question[10],
+  filler_question[11],
+  filler_question[8],
+  filler_question[9],
+  filler_question[10],
+  filler_question[11],
+  //id9
+  filler_question[12],
+  filler_question[13],
+  filler_question[14],
+  filler_question[15],
+  filler_question[12],
+  filler_question[13],
+  filler_question[14],
+  filler_question[15],
+  //id10
+  filler_question[16],
+  filler_question[17],
+  filler_question[18],
+  filler_question[19],
+  filler_question[16],
+  filler_question[17],
+  filler_question[18],
+  filler_question[19],
+  //id11
+  filler_question[20],
+  filler_question[21],
+  filler_question[22],
+  filler_question[23],
+  filler_question[24],
+  filler_question[25],
+  filler_question[26],
+  filler_question[27],
+  //id12
+];
+
+const filler_raw_answer = [
+  filler_answer[0],
+  filler_answer[0],
+  filler_answer[0],
+  filler_answer[0],
+  filler_answer[1],
+  filler_answer[1],
+  filler_answer[1],
+  filler_answer[1],
+  //id7
+  filler_answer[2],
+  filler_answer[2],
+  filler_answer[2],
+  filler_answer[2],
+  filler_answer[3],
+  filler_answer[3],
+  filler_answer[3],
+  filler_answer[3],
+  //id8
+  filler_answer[4],
+  filler_answer[4],
+  filler_answer[4],
+  filler_answer[4],
+  filler_answer[5],
+  filler_answer[5],
+  filler_answer[5],
+  filler_answer[5],
+  //id9
+  filler_answer[6],
+  filler_answer[6],
+  filler_answer[6],
+  filler_answer[6],
+  filler_answer[7],
+  filler_answer[7],
+  filler_answer[7],
+  filler_answer[7],
+  //id10
+  filler_answer[8],
+  filler_answer[8],
+  filler_answer[8],
+  filler_answer[8],
+  filler_answer[9],
+  filler_answer[9],
+  filler_answer[9],
+  filler_answer[9],
+  //id11
+  filler_answer[10],
+  filler_answer[10],
+  filler_answer[10],
+  filler_answer[10],
+  filler_answer[11],
+  filler_answer[11],
+  filler_answer[11],
+  filler_answer[11],
+  //id12
+];
+
+const filler_raw_conclusion = [
+  filler_conclusion[0],
+  filler_conclusion[0],
+  filler_conclusion[0],
+  filler_conclusion[0],
+  filler_conclusion[0],
+  filler_conclusion[0],
+  filler_conclusion[0],
+  filler_conclusion[0],
+  //item1
+  filler_conclusion[1],
+  filler_conclusion[1],
+  filler_conclusion[1],
+  filler_conclusion[1],
+  filler_conclusion[1],
+  filler_conclusion[1],
+  filler_conclusion[1],
+  filler_conclusion[1],
+  //item2
+  filler_conclusion[2],
+  filler_conclusion[2],
+  filler_conclusion[2],
+  filler_conclusion[2],
+  filler_conclusion[2],
+  filler_conclusion[2],
+  filler_conclusion[2],
+  filler_conclusion[2],
+  //item3
+  filler_conclusion[3],
+  filler_conclusion[3],
+  filler_conclusion[3],
+  filler_conclusion[3],
+  filler_conclusion[3],
+  filler_conclusion[3],
+  filler_conclusion[3],
+  filler_conclusion[3],
+  //item4
+  filler_conclusion[4],
+  filler_conclusion[4],
+  filler_conclusion[4],
+  filler_conclusion[4],
+  filler_conclusion[4],
+  filler_conclusion[4],
+  filler_conclusion[4],
+  filler_conclusion[4],
+  //item5
+  filler_conclusion[5],
+  filler_conclusion[5],
+  filler_conclusion[5],
+  filler_conclusion[5],
+  filler_conclusion[5],
+  filler_conclusion[5],
+  filler_conclusion[5],
+  filler_conclusion[5],
+  //item6
+];
+//6lists
+const raw_question_us = _.chunk(raw_question, 6);
+const raw_answer_us = _.chunk(raw_answer, 6);
+const raw_conclusion_us = _.chunk(raw_conclusion, 6);
+
+const raw_filler_question_us = _.chunk(filler_raw_question, 8);
+const raw_filler_answer_us = _.chunk(filler_raw_answer, 8);
+const raw_filler_conclusion_us = _.chunk(filler_raw_conclusion, 8);
+
+// abwechselnd item und filler trials als blöcke (6 items, 12 fillers, ...)
+const all_questions_raw = _.flatten(_.concat(raw_question_us[0], raw_filler_question_us[0],raw_question_us[1], raw_filler_question_us[1],raw_question_us[2], raw_filler_question_us[2],raw_question_us[3], raw_filler_question_us[3],raw_question_us[4], raw_filler_question_us[4],raw_question_us[5], raw_filler_question_us[5]));
+const all_answers_raw = _.flatten(_.concat(raw_answer_us[0], raw_filler_answer_us[0],raw_answer_us[1], raw_filler_answer_us[1],raw_answer_us[2], raw_filler_answer_us[2],raw_answer_us[3], raw_filler_answer_us[3],raw_answer_us[4], raw_filler_answer_us[4],raw_answer_us[5], raw_filler_answer_us[5],));
+const all_conclusions_raw = _.flatten(_.concat(raw_conclusion_us[0], raw_filler_conclusion_us[0],raw_conclusion_us[1], raw_filler_conclusion_us[1],raw_conclusion_us[2], raw_filler_conclusion_us[2],raw_conclusion_us[3], raw_filler_conclusion_us[3], raw_conclusion_us[4], raw_filler_conclusion_us[4],raw_conclusion_us[5], raw_filler_conclusion_us[5]));
+
+
 
 //use latin square design to create 6 trial lists
 // 2 answer cond: sup , comp
@@ -1080,6 +1288,8 @@ const filler_conclusion = [
 // D = comp, polar
 // E = comp, howmany
 // F = comp, what
+
+
 
 const question_ordered = [
   question_text[1],
@@ -1216,15 +1426,259 @@ const conclusion_ordered = [
   //l6
 ];
 
+//shuffle filler accrding to hard coded latin square design by copying latin square design of main trials and double the list entries
+const filler_question_ordered = [
+  filler_question[1],
+  filler_question[5],
+  filler_question[6],
+  filler_question[11],
+  filler_question[12],
+  filler_question[16],
+  filler_question[19],
+  filler_question[5+18],
+  filler_question[6+18],
+  filler_question[11+18],
+  filler_question[29],
+  filler_question[16+18],
+  //l1
+  filler_question[0],
+  filler_question[4],
+  filler_question[6],
+  filler_question[11],
+  filler_question[13],
+  filler_question[17],
+  filler_question[18],
+  filler_question[4+18],
+  filler_question[6+18],
+  filler_question[11+18],
+  filler_question[13+18],
+  filler_question[17+18],
+  //l2
+  filler_question[0],
+  filler_question[5],
+  filler_question[7],
+  filler_question[9],
+  filler_question[14],
+  filler_question[16],
+  filler_question[0+18],
+  filler_question[5+18],
+  filler_question[7+18],
+  filler_question[9+18],
+  filler_question[14+18],
+  filler_question[16+18],
+  //l3
+  filler_question[2],
+  filler_question[3],
+  filler_question[7],
+  filler_question[10],
+  filler_question[14],
+  filler_question[15],
+  filler_question[2+18],
+  filler_question[3+18],
+  filler_question[7+18],
+  filler_question[10+18],
+  filler_question[14+18],
+  filler_question[15+18],
+  //l4
+  filler_question[1],
+  filler_question[3],
+  filler_question[8],
+  filler_question[10],
+  filler_question[12],
+  filler_question[17],
+  filler_question[1+18],
+  filler_question[3+18],
+  filler_question[8+18],
+  filler_question[10+18],
+  filler_question[12+18],
+  filler_question[17+18],
+  //l5
+  filler_question[2],
+  filler_question[4],
+  filler_question[8],
+  filler_question[9],
+  filler_question[13],
+  filler_question[15],
+  filler_question[2+18],
+  filler_question[4+18],
+  filler_question[8+18],
+  filler_question[9+18],
+  filler_question[13+18],
+  filler_question[15+18],
+  //l6
+];
+
+const filler_answers_ordered = [
+  filler_answer[6],
+  filler_answer[1],
+  filler_answer[2],
+  filler_answer[9],
+  filler_answer[10],
+  filler_answer[5+12],
+  filler_answer[6+12],
+  filler_answer[1+12],
+  filler_answer[2+12],
+  filler_answer[9+12],
+  filler_answer[10+12],
+  filler_answer[5+12],
+  //l1
+  filler_answer[0],
+  filler_answer[7],
+  filler_answer[8],
+  filler_answer[2],
+  filler_answer[4],
+  filler_answer[11],
+  filler_answer[0+12],
+  filler_answer[7+12],
+  filler_answer[8+12],
+  filler_answer[2+12],
+  filler_answer[4+12],
+  filler_answer[11+12],
+  //l2
+  filler_answer[6],
+  filler_answer[7],
+  filler_answer[2],
+  filler_answer[3],
+  filler_answer[4],
+  filler_answer[11],
+  filler_answer[6+12],
+  filler_answer[7+12],
+  filler_answer[2+12],
+  filler_answer[3+12],
+  filler_answer[4+12],
+  filler_answer[11+12],
+  //l3
+  filler_answer[0],
+  filler_answer[1],
+  filler_answer[8],
+  filler_answer[3],
+  filler_answer[10],
+  filler_answer[11],
+  filler_answer[0+12],
+  filler_answer[1+12],
+  filler_answer[8+12],
+  filler_answer[3+12],
+  filler_answer[10+12],
+  filler_answer[11+12],
+  //l4
+  filler_answer[0],
+  filler_answer[7],
+  filler_answer[8],
+  filler_answer[9],
+  filler_answer[4],
+  filler_answer[5],
+  filler_answer[0+12],
+  filler_answer[7+12],
+  filler_answer[8+12],
+  filler_answer[9+12],
+  filler_answer[4+12],
+  filler_answer[5+12],
+  //l5
+  filler_answer[6],
+  filler_answer[1],
+  filler_answer[2],
+  filler_answer[9],
+  filler_answer[10],
+  filler_answer[5],
+  filler_answer[6+12],
+  filler_answer[1+12],
+  filler_answer[2+12],
+  filler_answer[9+12],
+  filler_answer[10+12],
+  filler_answer[5+12],
+  //l6
+];
+
+const filler_conclusion_ordered = [
+  filler_conclusion[0],
+  filler_conclusion[1],
+  filler_conclusion[2],
+  filler_conclusion[3],
+  filler_conclusion[4],
+  filler_conclusion[5],
+  filler_conclusion[0+6],
+  filler_conclusion[1+6],
+  filler_conclusion[2+6],
+  filler_conclusion[3+6],
+  filler_conclusion[4+6],
+  filler_conclusion[5+6],
+  //l1
+  filler_conclusion[0],
+  filler_conclusion[1],
+  filler_conclusion[2],
+  filler_conclusion[3],
+  filler_conclusion[4],
+  filler_conclusion[5],
+  filler_conclusion[0+6],
+  filler_conclusion[1+6],
+  filler_conclusion[2+6],
+  filler_conclusion[3+6],
+  filler_conclusion[4+6],
+  filler_conclusion[5+6],
+  //l2
+  filler_conclusion[0],
+  filler_conclusion[1],
+  filler_conclusion[2],
+  filler_conclusion[3],
+  filler_conclusion[4],
+  filler_conclusion[5],
+  filler_conclusion[0+6],
+  filler_conclusion[1+6],
+  filler_conclusion[2+6],
+  filler_conclusion[3+6],
+  filler_conclusion[4+6],
+  filler_conclusion[5+6],
+  //l3
+  filler_conclusion[0],
+  filler_conclusion[1],
+  filler_conclusion[2],
+  filler_conclusion[3],
+  filler_conclusion[4],
+  filler_conclusion[5],
+  filler_conclusion[0+6],
+  filler_conclusion[1+6],
+  filler_conclusion[2+6],
+  filler_conclusion[3+6],
+  filler_conclusion[4+6],
+  filler_conclusion[5+6],
+  //l4
+  filler_conclusion[0],
+  filler_conclusion[1],
+  filler_conclusion[2],
+  filler_conclusion[3],
+  filler_conclusion[4],
+  filler_conclusion[5],
+  filler_conclusion[0+6],
+  filler_conclusion[1+6],
+  filler_conclusion[2+6],
+  filler_conclusion[3+6],
+  filler_conclusion[4+6],
+  filler_conclusion[5+6],
+  //l5
+  filler_conclusion[0],
+  filler_conclusion[1],
+  filler_conclusion[2],
+  filler_conclusion[3],
+  filler_conclusion[4],
+  filler_conclusion[5],
+  filler_conclusion[0+6],
+  filler_conclusion[1+6],
+  filler_conclusion[2+6],
+  filler_conclusion[3+6],
+  filler_conclusion[4+6],
+  filler_conclusion[5+6],
+  //l6
+];
+
 //chunk item trials into 6 lists
 const question_lists = _.chunk(question_ordered, 6);
 const answer_lists = _.chunk(answers_ordered, 6);
 const conclusion_lists = _.chunk(conclusion_ordered, 6);
 
 //chunk filler trials into 6 lists
-const filler_question_lists = _.chunk(filler_question, 12);
-const filler_answer_lists = _.chunk(filler_answer, 12);
-const filler_conclusion_lists = _.chunk(filler_conclusion, 12);
+const filler_question_lists = _.chunk(filler_question_ordered, 12);
+const filler_answer_lists = _.chunk(filler_answers_ordered, 12);
+const filler_conclusion_lists = _.chunk(filler_conclusion_ordered, 12);
 
 // abwechselnd item und filler trials als blöcke (6 items, 12 fillers, ...)
 const all_questions = _.flatten(_.concat(question_lists[0], filler_question_lists[0], question_lists[1], filler_question_lists[1], question_lists[2], filler_question_lists[2], question_lists[3], filler_question_lists[3], question_lists[4], filler_question_lists[4], question_lists[5], filler_question_lists[5]));

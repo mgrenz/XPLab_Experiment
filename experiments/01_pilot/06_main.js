@@ -17,20 +17,20 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
-            magpieUtils.views.loop([question, answer, conclusion], 18), //18 = 1 item block + 1 filler block; normal: all_questions.length
+            magpieUtils.views.loop([question, answer, conclusion], all_questions_raw.length), //18 = 1 item block + 1 filler block; normal: all_questions.length
             post_test,
             thanks,
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "INSERT_A_NUMBER",
+            experimentID: "274",
             serverAppURL: "https://magpie-demo.herokuapp.com/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "debug",
-            contact_email: "YOUREMAIL@wherelifeisgreat.you",
-            prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
+            deployMethod: "directLink",
+            contact_email: "mgrenz@uos.de",
+            //prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
         // Here, you can specify how the progress bar should look like
         progress_bar: {
