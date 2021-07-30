@@ -7,7 +7,7 @@ const conclusion_text = [
       type: 'main',
       id:1,
       QUD: 'Based on this, the judge concludes:',
-      question: 'The witness doesn’t know exactly how many coins she had in her hand.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+      question: 'The witness doesn’t know exactly how many coins there were in the purse.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
@@ -15,7 +15,7 @@ const conclusion_text = [
       type: 'main',
       id:2,
       QUD: 'Based on this, the judge concludes:',
-      question: 'The witness doesn’t know exactly how many pills she took.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+      question: 'The witness doesn’t know exactly how many pills she took out of the bag.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //1
@@ -23,7 +23,7 @@ const conclusion_text = [
       type: 'main',
       id:3,
       QUD: 'Based on this, the judge concludes:',
-      question: 'The witness doesn’t know exactly how many shots they heard.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+      question: 'The witness doesn’t know exactly how many shots they heard in the distance.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //2
@@ -31,7 +31,7 @@ const conclusion_text = [
       type: 'main',
       id:4,
       QUD: 'Based on this, the judge concludes:',
-      question: 'The witness doesn’t know exactly how many thieves there were in the bank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+      question: 'The witness doesn’t know exactly how many thieves they saw in the bank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //3
@@ -39,7 +39,7 @@ const conclusion_text = [
       type: 'main',
       id:5,
       QUD: 'Based on this, the judge concludes:',
-      question: 'The witness doesn’t know exactly how many shots they drank.  <br /> <br /> How justified is the judge in drawing that conclusion?',
+      question: 'The witness doesn’t know exactly how many shots they drank that night.  <br /> <br /> How justified is the judge in drawing that conclusion?',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //4
@@ -58,21 +58,21 @@ const answer_text = [
       type: 'main',
       id: 1,
       condition: 'COMP',
-      sentence: 'I | had | less | than | ten | coins | in | my | hand.',
+      sentence: 'There | were | less | than | ten | coins | in | the | purse.',
       option1: 'next'
     }, //0
     {
       type: 'main',
       id: 2,
       condition: 'COMP',
-      sentence: 'I | had | taken | less | than | ten | pills.',
+      sentence: 'I | had | taken | less | than | ten | pills | out | of | the | bag.',
       option1: 'next'
     }, //1
     {
       type: 'main',
       id: 3,
       condition: 'COMP',
-      sentence: ' I | heard | less | than | ten | shots.',
+      sentence: ' I | heard | less | than | ten | shots | in | the | distance.',
       option1: 'next'
     }, //2
     {
@@ -86,7 +86,7 @@ const answer_text = [
       type: 'main',
       id: 5,
       condition: 'COMP',
-      sentence: 'I | had | less | than | ten | shots.',
+      sentence: 'I | drank | less | than | ten | shots | that | night.',
       option1: 'next'
     }, //4
     {
@@ -100,21 +100,21 @@ const answer_text = [
       type: 'main',
       id: 1,
       condition: 'SUP',
-      sentence: 'I | had | at | most | ten | coins | in | my | hand.',
+      sentence: 'There | were | at | most | ten | coins | in | the | purse.',
       option1: 'next'
     }, //6
     {
       type: 'main',
       id:2,
       condition: 'SUP',
-      sentence: 'I | had | taken | at | most | ten | pills.',
+      sentence: 'I | had | taken | at | most | ten | pills | out | of | the | bag.',
       option1: 'next'
     }, //7
     {
       type: 'main',
       id:3,
       condition: 'SUP',
-      sentence: 'I | heard | at | most | ten | shots.',
+      sentence: 'I | heard | at | most | ten | shots | in | the | distance.',
       option1: 'next'
     }, //8
     {
@@ -128,7 +128,7 @@ const answer_text = [
       type: 'main',
       id:5,
       condition: 'SUP',
-      sentence: 'I | had | at | most | ten | shots.',
+      sentence: 'I | drank | less | than | ten | shots | that | night.',
       option1: 'next'
     }, //10
     {
@@ -146,7 +146,7 @@ const question_text = [
       id:1,
       QUD: 'The judge asks:',
       condition: 'POLAR',
-      question: 'Were there {at most / less than} ten coins in your hand? <br /> <br /> The witness responds:',
+      question: 'Were there {at most / less than} ten coins in the purse? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //0
     {
@@ -154,7 +154,7 @@ const question_text = [
       id:1,
       QUD: 'The judge asks:',
       condition: 'WHAT',
-      question: 'What was in your hand?<br /> <br /> The witness responds:',
+      question: 'What was in the purse? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //1
     {
@@ -162,7 +162,7 @@ const question_text = [
       id:1,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
-      question: 'How many coins did you have in your hand?<br /> <br /> The witness responds:',
+      question: 'How many coins were there  in the purse? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //2
     {
@@ -170,7 +170,7 @@ const question_text = [
       id:2,
       QUD: 'The judge asks:',
       condition: 'POLAR',
-      question: 'Did you take {at most / less than} ten pills?<br /> <br /> The witness responds:',
+      question: 'Did you take {at most / less than} ten pills? out of the bag? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //3
     {
@@ -178,7 +178,7 @@ const question_text = [
       id:2,
       QUD: 'The judge asks:',
       condition: 'WHAT',
-      question: 'What did you do?<br /> <br /> The witness responds:',
+      question: 'What did you take out of the bag? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //4
     {
@@ -186,7 +186,7 @@ const question_text = [
       id:2,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
-      question: 'How many pills did you take?<br /> <br /> The witness responds:',
+      question: 'How many pills did you take out of the bag? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //5
     {
@@ -194,7 +194,7 @@ const question_text = [
       id:3,
       QUD: 'The judge asks:',
       condition: 'POLAR',
-      question: 'Did you hear {at most / less than} ten shots? <br /> <br /> The witness responds:',
+      question: 'Did you hear {at most / less than} ten shots in the distance? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //6
     {
@@ -210,7 +210,7 @@ const question_text = [
       id:3,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
-      question: 'How many shots did you hear? <br /> <br /> The witness responds:',
+      question: 'How many shots did you hear in the distance? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //8
     {
@@ -218,7 +218,7 @@ const question_text = [
       id:4,
       QUD: 'The judge asks:',
       condition: 'POLAR',
-      question: 'Did you count {at most / less than} ten thieves in the bank? <br /> <br /> The witness responds:',
+      question: 'Did you see {at most / less than} ten thieves in the bank? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //9
     {
@@ -226,7 +226,7 @@ const question_text = [
       id:4,
       QUD: 'The judge asks:',
       condition: 'WHAT',
-      question: 'What did you count? <br /> <br /> The witness responds:',
+      question: 'What did you see in the bank? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //10
     {
@@ -234,7 +234,7 @@ const question_text = [
       id:4,
       QUD: 'The judge asks:',
       condition: 'HOWMANY',
-      question: 'How many thieves did you count in the bank? <br /> <br /> The witness responds:',
+      question: 'How many thieves did you see in the bank? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //11
     {
@@ -250,7 +250,7 @@ const question_text = [
       id:5,
       QUD: 'The judge asks:',
       condition: 'WHAT',
-      question: 'What did you drink? <br /> <br /> The witness responds:',
+      question: 'What did you drink that night? <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //13
     {
@@ -274,7 +274,7 @@ const question_text = [
       id:6,
       QUD: 'The judge asks:',
       condition: 'WHAT',
-      question: 'What did you crash with?  <br /> <br /> The witness responds:',
+      question: 'What did you crash with during the accident?  <br /> <br /> The witness responds:',
       option1: 'Next',
     }, //16
     {
@@ -286,7 +286,6 @@ const question_text = [
       option1: 'Next',
     }, //17
   ];
-
 
 //filler information
 
