@@ -4,9 +4,25 @@
 *
 *
 */
-const coin = _.sample(["head", "tail"]); // You can determine global (random) parameters here
+// You can determine global (random) parameters here
 // Declare your variables here
+/*
 
+//group alocation
+const group = _.sample(["list1", "list2"]);
+
+const group = _.sample(["list1", "list2"]);
+if (group == "list1") {
+    main_question= flat_question_1;
+    main_answer= flat_answer_1;
+    main_conclusion= flat_conclusion_1;
+}
+if (group == "list2") {
+    main_question= flat_question_2;
+    main_answer= flat_answer_2;
+    main_conclusion= flat_conclusion_2;
+}
+*/
 
 
 /* Helper functions

@@ -205,12 +205,13 @@ const conclusion = magpieViews.view_generator(
 
 //with randomization
 //L1 items
+
 const question_1 = magpieViews.view_generator(
   'forced_choice',
   {
     trials: 1,
     name: 'question_1',
-    data: flat_question_1,
+    data: flat_question_1,//main_question,
   },
   {
     answer_container_generator: function (config, CT) {
@@ -228,7 +229,7 @@ const answer_1 = magpieViews.view_generator(
   {
     trials: 1,
     name: 'answer_1',
-    data: flat_answer_1,
+    data: flat_answer_1,//main_answer,
   },
   //chang eanswer format from button press choice to one click answer
   {
@@ -247,7 +248,7 @@ const conclusion_1 = magpieViews.view_generator(
   {
     trials: 1,
     name: 'conclusion_1',
-    data: flat_conclusion_1,
+    data: flat_conclusion_1//main_conclusion,
   },
   {
     answer_container_generator: function(config, CT) {
@@ -289,8 +290,6 @@ const fill_question = magpieViews.view_generator(
   }
 );
 
-
-//MOD view: self_paced_reading with button press and time measurement
 const fill_answer = magpieViews.view_generator(
   'self_paced_reading',
   {
@@ -310,8 +309,6 @@ const fill_answer = magpieViews.view_generator(
   }
 );
 
-
-//Conclusion with Likert scale rating with custom likert scale
 const fill_conclusion = magpieViews.view_generator(
   'rating_scale',
   {
@@ -339,6 +336,76 @@ const fill_conclusion = magpieViews.view_generator(
     }
   }
 );
+
+
+
+//try of randomization beteen l1 and l2
+/*
+const question_1 = magpieViews.view_generator(
+  'forced_choice',
+  {
+    trials: 1,
+    name: 'question_1',
+    data: main_question,
+  },
+  {
+    answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+    }
+  }
+);
+
+const answer_1 = magpieViews.view_generator(
+  'self_paced_reading',
+  {
+    trials: 1,
+    name: 'answer_1',
+    data: main_answer,
+  },
+  //chang eanswer format from button press choice to one click answer
+  {
+    answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+    },
+  }
+);
+
+const conclusion_1 = magpieViews.view_generator(
+  'rating_scale',
+  {
+    trials: 1,
+    name: 'conclusion_1',
+    data: main_conclusion,
+  },
+  {
+    answer_container_generator: function(config, CT) {
+          return `<p class='magpie-view-question'>${config.data[CT].question}</p>
+                  <div class='magpie-view-answer-container'>
+                      <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionLeft}</strong>
+                      <label for="1" class='magpie-response-rating'>1</label>
+                      <input type="radio" name="answer" id="1" value="1" />
+                      <label for="2" class='magpie-response-rating'>2</label>
+                      <input type="radio" name="answer" id="2" value="2" />
+                      <label for="3" class='magpie-response-rating'>3</label>
+                      <input type="radio" name="answer" id="3" value="3" />
+                      <label for="4" class='magpie-response-rating'>4</label>
+                      <input type="radio" name="answer" id="4" value="4" />
+                      <label for="5" class='magpie-response-rating'>5</label>
+                      <input type="radio" name="answer" id="5" value="5" />
+                      <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionRight}</strong>
+                    </div>`;
+    }
+  }
+);
+*/
 
 
 // There are many more templates available:

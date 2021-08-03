@@ -1,5 +1,5 @@
 // In this file you can specify the trial data for your experiment
-
+//useful for group : https://github.com/magpie-ea/magpie-indicative-conditionals/blob/master/experiments-1-2-3_combined/02_custom_functions.js
 
 
 // item information
@@ -1444,7 +1444,7 @@ const conclusion_ordered_1 = [
   ],
 ];
 //flatten lists
-const flat_question_1 = _.flatten(question_ordered_1);
+let flat_question_1 = _.flatten(question_ordered_1);
 const flat_answer_1 = _.flatten(answers_ordered_1);
 const flat_conclusion_1 = _.flatten(conclusion_ordered_1);
 
@@ -1599,6 +1599,10 @@ const conclusion_ordered_2 = [
     conclusion_text[3],
   ],
 ];
+//flat
+const flat_question_2 = _.flatten(question_ordered_2);
+const flat_answer_2 = _.flatten(answers_ordered_2);
+const flat_conclusion_2 = _.flatten(conclusion_ordered_2);
 
 //fillers NOT RANDOMIZED (just chunked); 12 sublists
 const filler_question_ordered = [
@@ -1974,7 +1978,6 @@ const filler_conclusion_ordered = [
 const flat_filler_question = _.flatten(filler_question_ordered);
 const flat_filler_answer = _.flatten(filler_answers_ordered);
 const flat_filler_conclusion = _.flatten(filler_conclusion_ordered);
-
 
 
 
