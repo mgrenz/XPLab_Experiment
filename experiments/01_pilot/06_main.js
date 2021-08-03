@@ -14,33 +14,44 @@ $("document").ready(function() {
     // in all other modes null will be returned
     window.magpie_monitor = magpieInit({
         // You have to specify all views you want to use in this experiment and the order of them
-        views_seq: [
+        /*views_seq: [
             intro,
             instructions,
-            //magpieUtils.views.loop([question_view, answer_view, conclusion_view], 2),
-            answer_view,
+            magpieUtils.views.loop([question, answer, conclusion], all_questions_raw.length), //18 = 1 item block + 1 filler block; normal: all_questions.length
             post_test,
             thanks,
+        ],*/
+        views_seq: [
+          intro,
+          instructions,
+          magpieUtils.views.loop([magpieUtils.views.loop([question_1, answer_1, conclusion_1], 6), magpieUtils.views.loop([fill_question, fill_answer, fill_conclusion], 12)], 6), //18 = 1 item block + 1 filler block; normal: all_questions.length
+          post_test,
+          thanks,
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "INSERT_A_NUMBER",
+            experimentID: "275",
             serverAppURL: "https://magpie-demo.herokuapp.com/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
             deployMethod: "debug",
-            contact_email: "YOUREMAIL@wherelifeisgreat.you",
-            prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
+            contact_email: "mgrenz@uos.de",
+            //prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
         // Here, you can specify how the progress bar should look like
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                post_test.name,
+                question_1.name,
+                answer_1.name,
+                conclusion_1.name,
+                fill_question.name,
+                fill_answer.name,
+                fill_conclusion.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
-            style: "separate",
+            style: "default",
             width: 100
         }
     });
