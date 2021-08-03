@@ -47,7 +47,7 @@ const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'General Instructions',
-  text: `The setting of this experiment is a courtroom with a judge and
+  text: `The setting of this experiment is a courtroom with a jusge and
    a witness present.
            <br />
            <br />
@@ -69,7 +69,7 @@ const instructions = magpieViews.view_generator("instructions", {
             justifiable you preceive the judges conclusion.
             <br /r>
             <br /r>
-            You will be presented with 108 trials. Please try to avoid breaks
+            You will be presented with 36 trials. Please try to avoid breaks
             and minimize distractions in your immediate surrounding.`,
   buttonText: 'go to trials'
 });
@@ -106,8 +106,6 @@ const thanks = magpieViews.view_generator("thanks", {
   prolificConfirmText: 'Press the button'
 });
 
-
-
 /** trial (magpie's Trial Type Views) below
 
 * Obligatory properties
@@ -132,13 +130,24 @@ const thanks = magpieViews.view_generator("thanks", {
 */
 
 
+
+
+
+// There are many more templates available:
+// forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
+// key_press, self_paced_reading and self_paced_reading_rating_scale
+
+
+
 //QUD view : only reading
-const question = magpieViews.view_generator(
+const question_view = magpieViews.view_generator(
   'forced_choice',
   {
-    trials: 1,
-    name: 'question',
-    data: all_questions_raw,
+    trials: main_trials.length,
+    name: 'question-view',
+    //just shuffling without respect to condition
+    //data: _.shuffle(question_text),
+    data: main_trials,
   },
   {
     answer_container_generator: function (config, CT) {
@@ -153,33 +162,32 @@ const question = magpieViews.view_generator(
 
 
 //MOD view: self_paced_reading with button press and time measurement
-const answer = magpieViews.view_generator(
+const answer_view = magpieViews.view_generator(
   'self_paced_reading',
   {
     trials: 1,
-    name: 'answer',
-    data: all_answers_raw,
+    name: 'answer_view',
+    //just shuffling without respect to condition
+    data: main_trials,
   },
   //chang eanswer format from button press choice to one click answer
   {
-    answer_container_generator: function (config, CT) {
-        return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
-                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
-                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-                </div>`;
-    },
+    stimulus_container_generator: custom_self_paced_reading_stimulus,
+  handle_response_function: custom_self_paced_reading_response,
+  answer_container_generator: custom_self_paced_reading_answer,
   }
 );
 
 
 //Conclusion with Likert scale rating with custom likert scale
-const conclusion = magpieViews.view_generator(
+const conclusion_view = magpieViews.view_generator(
   'rating_scale',
   {
     trials: 1,
-    name: 'conclusion',
-    data: all_conclusions_raw,
+    name: 'conclusion_view',
+    //just shuffling without respect to condition
+    data: main_trials,
+
   },
   {
     answer_container_generator: function(config, CT) {
@@ -201,8 +209,3 @@ const conclusion = magpieViews.view_generator(
     }
   }
 );
-
-
-// There are many more templates available:
-// forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
-// key_press, self_paced_reading and self_paced_reading_rating_scale
