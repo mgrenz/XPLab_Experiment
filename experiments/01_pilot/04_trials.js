@@ -1979,7 +1979,7 @@ const flat_filler_question = _.flatten(filler_question_ordered);
 const flat_filler_answer = _.flatten(filler_answers_ordered);
 const flat_filler_conclusion = _.flatten(filler_conclusion_ordered);
 
-
+grouping(group)
 
 // abwechselnd item und filler trials als blöcke (6 items, 12 fillers, ...)
 /*const all_questions = _.flatten(_.concat(question_lists[0], filler_question_lists[0], question_lists[1], filler_question_lists[1], question_lists[2], filler_question_lists[2], question_lists[3], filler_question_lists[3], question_lists[4], filler_question_lists[4], question_lists[5], filler_question_lists[5]));

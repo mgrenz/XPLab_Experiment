@@ -23,7 +23,7 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `A warm welcome to this experiment and a heartfelt
+  text: `You are in the <strong>${group}</strong> group. A warm welcome to this experiment and a heartfelt
         thank-you for participating.
             <br />
             <br />
@@ -211,7 +211,7 @@ const question_1 = magpieViews.view_generator(
   {
     trials: 1,
     name: 'question_1',
-    data: flat_question_1,//main_question,
+    data: main_question,
   },
   {
     answer_container_generator: function (config, CT) {
@@ -229,7 +229,7 @@ const answer_1 = magpieViews.view_generator(
   {
     trials: 1,
     name: 'answer_1',
-    data: flat_answer_1,//main_answer,
+    data: main_answer,
   },
   //chang eanswer format from button press choice to one click answer
   {
@@ -248,7 +248,7 @@ const conclusion_1 = magpieViews.view_generator(
   {
     trials: 1,
     name: 'conclusion_1',
-    data: flat_conclusion_1//main_conclusion,
+    data: main_conclusion,
   },
   {
     answer_container_generator: function(config, CT) {

@@ -6,11 +6,26 @@
 */
 // You can determine global (random) parameters here
 // Declare your variables here
-/*
+
 
 //group alocation
 const group = _.sample(["list1", "list2"]);
 
+function grouping(group) {
+  let list;
+  if (group == "list1") {
+    main_question= flat_question_1;
+    main_answer= flat_answer_1;
+    main_conclusion= flat_conclusion_1;
+  } else {
+    main_question= flat_question_2;
+    main_answer= flat_answer_2;
+    main_conclusion= flat_conclusion_2;
+  }
+  return main_question, main_answer, main_conclusion;
+};
+
+/*
 const group = _.sample(["list1", "list2"]);
 if (group == "list1") {
     main_question= flat_question_1;
@@ -22,8 +37,8 @@ if (group == "list2") {
     main_answer= flat_answer_2;
     main_conclusion= flat_conclusion_2;
 }
-*/
 
+*/
 
 /* Helper functions
 *
