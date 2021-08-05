@@ -14,17 +14,10 @@ $("document").ready(function() {
     // in all other modes null will be returned
     window.magpie_monitor = magpieInit({
         // You have to specify all views you want to use in this experiment and the order of them
-        /*views_seq: [
-            intro,
-            instructions,
-            magpieUtils.views.loop([question, answer, conclusion], all_questions_raw.length), //18 = 1 item block + 1 filler block; normal: all_questions.length
-            post_test,
-            thanks,
-        ],*/
         views_seq: [
           intro,
           instructions,
-          magpieUtils.views.loop([magpieUtils.views.loop([question_1, answer_1, conclusion_1], 6), magpieUtils.views.loop([fill_question, fill_answer, fill_conclusion], 12)], 6), //18 = 1 item block + 1 filler block; normal: all_questions.length
+          magpieUtils.views.loop([magpieUtils.views.loop([question_view, answer_view, conclusion_view], 6), magpieUtils.views.loop([fill_question, fill_answer, fill_conclusion], 12)], 6), //18 = 1 item block + 1 filler block; normal: all_questions.length
           post_test,
           thanks,
         ],
@@ -43,9 +36,9 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                question_1.name,
-                answer_1.name,
-                conclusion_1.name,
+                question_view.name,
+                answer_view.name,
+                conclusion_view.name,
                 fill_question.name,
                 fill_answer.name,
                 fill_conclusion.name,

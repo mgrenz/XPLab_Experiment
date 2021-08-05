@@ -23,7 +23,7 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `You are in the <strong>${group}</strong> group. A warm welcome to this experiment and a heartfelt
+  text: `<strong>${group}</strong> A warm welcome to this experiment and a heartfelt
         thank-you for participating.
             <br />
             <br />
@@ -32,14 +32,14 @@ const intro = magpieViews.view_generator("intro", {
             negative consequences.
             <br />
             <br />
-            Your data will be stored anonymously and will be used
-            for scientific purposes only. Therefore, we might share
-            the data with other scientists.
+            Your data will be stored anonymously and is collected
+            for our final project in the course "Experimental Psychology Lab".
+            The experiment will take approximately 20 minutes.
             <br />
             <br />
             Proceeding signifies that you read, understood and agree
             to this terms.`,
-  buttonText: 'begin the experiment'
+  buttonText: 'proceed to instructions'
 });
 
 // For most tasks, you need instructions views
@@ -55,7 +55,7 @@ const instructions = magpieViews.view_generator("instructions", {
            screens.
             <br />
             <br />
-            The first screen displays a conversation between the judge and
+            The first screen displays a question the judge asks
             the witness, which you are asked to read at your own pace.
             <br />
             <br />
@@ -65,12 +65,12 @@ const instructions = magpieViews.view_generator("instructions", {
             <br />
             <br />
             On the third screen, a conclusion of the judge will be displayed.
-            We ask you to read the conclusion and indicate afterwards for how
+            We ask you to read the conclusion and indicate afterwards on a
+            scale from 1 (not justifiable at all) to 5 (strongly justifiable) for how
             justifiable you preceive the judges conclusion.
             <br /r>
             <br /r>
-            You will be presented with 108 trials. Please try to avoid breaks
-            and minimize distractions in your immediate surrounding.`,
+            Please try to avoid breaks and minimize distractions in your immediate surrounding.`,
   buttonText: 'go to trials'
 });
 
@@ -131,107 +131,39 @@ const thanks = magpieViews.view_generator("thanks", {
 * https://magpie-ea.github.io/magpie-docs/01_designing_experiments/01_template_views/#trial-views
 */
 
-
-//without randomization
-//QUD view : only reading
-const question = magpieViews.view_generator(
+//item views
+const question_view = magpieViews.view_generator(
   'forced_choice',
   {
     trials: 1,
-    name: 'question',
-    data: all_questions_raw,
-  },
-  {
-    answer_container_generator: function (config, CT) {
-        return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
-                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
-                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-                </div>`;
-    }
-  }
-);
-
-//MOD view: self_paced_reading with button press and time measurement
-const answer = magpieViews.view_generator(
-  'self_paced_reading',
-  {
-    trials: 1,
-    name: 'answer',
-    data: all_answers_raw,
-  },
-  //chang eanswer format from button press choice to one click answer
-  {
-    answer_container_generator: function (config, CT) {
-        return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
-                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
-                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-                </div>`;
-    },
-  }
-);
-
-//Conclusion with Likert scale rating with custom likert scale
-const conclusion = magpieViews.view_generator(
-  'rating_scale',
-  {
-    trials: 1,
-    name: 'conclusion',
-    data: all_conclusions_raw,
-  },
-  {
-    answer_container_generator: function(config, CT) {
-          return `<p class='magpie-view-question'>${config.data[CT].question}</p>
-                  <div class='magpie-view-answer-container'>
-                      <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionLeft}</strong>
-                      <label for="1" class='magpie-response-rating'>1</label>
-                      <input type="radio" name="answer" id="1" value="1" />
-                      <label for="2" class='magpie-response-rating'>2</label>
-                      <input type="radio" name="answer" id="2" value="2" />
-                      <label for="3" class='magpie-response-rating'>3</label>
-                      <input type="radio" name="answer" id="3" value="3" />
-                      <label for="4" class='magpie-response-rating'>4</label>
-                      <input type="radio" name="answer" id="4" value="4" />
-                      <label for="5" class='magpie-response-rating'>5</label>
-                      <input type="radio" name="answer" id="5" value="5" />
-                      <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionRight}</strong>
-                    </div>`;
-    }
-  }
-);
-
-
-
-//with randomization
-//L1 items
-
-const question_1 = magpieViews.view_generator(
-  'forced_choice',
-  {
-    trials: 1,
-    name: 'question_1',
+    name: 'question_view',
     data: main_question,
   },
   {
     answer_container_generator: function (config, CT) {
         return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
                     <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
                     <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-                </div>`;
-    }
+                </div>`;},
+
+      stimulus_container_generator: function (config, CT) {
+        return `<div class='magpie-view'>
+                    <h1 class='magpie-view-title'>${config.title}</h1>
+                    <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[0]}</p>
+                    <p class='magpie-view-question'>"${config.data[CT].question}"</p>
+                    <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[1]}</p>
+                    </div>
+                </div>`;}
   }
 );
 
-const answer_1 = magpieViews.view_generator(
+const answer_view = magpieViews.view_generator(
   'self_paced_reading',
   {
     trials: 1,
-    name: 'answer_1',
+    name: 'answer_view',
     data: main_answer,
   },
-  //chang eanswer format from button press choice to one click answer
   {
     answer_container_generator: function (config, CT) {
         return `<div class='magpie-view-answer-container'>
@@ -243,17 +175,16 @@ const answer_1 = magpieViews.view_generator(
   }
 );
 
-const conclusion_1 = magpieViews.view_generator(
+const conclusion_view = magpieViews.view_generator(
   'rating_scale',
   {
     trials: 1,
-    name: 'conclusion_1',
+    name: 'conclusion_view',
     data: main_conclusion,
   },
   {
     answer_container_generator: function(config, CT) {
-          return `<p class='magpie-view-question'>${config.data[CT].question}</p>
-                  <div class='magpie-view-answer-container'>
+          return `<div class='magpie-view-answer-container'>
                       <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionLeft}</strong>
                       <label for="1" class='magpie-response-rating'>1</label>
                       <input type="radio" name="answer" id="1" value="1" />
@@ -266,10 +197,19 @@ const conclusion_1 = magpieViews.view_generator(
                       <label for="5" class='magpie-response-rating'>5</label>
                       <input type="radio" name="answer" id="5" value="5" />
                       <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionRight}</strong>
-                    </div>`;
-    }
+                    </div>`;},
+
+      stimulus_container_generator:  function (config, CT) {
+        return `<div class='magpie-view'>
+                    <h1 class='magpie-view-title'>${config.title}</h1>
+                    <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[0]}</p>
+                    <p class='magpie-view-question'>"${config.data[CT].question}"</p>
+                    <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[1]}</p>
+                    </div>
+                </div>`;}
   }
 );
+
 
 //filler views
 const fill_question = magpieViews.view_generator(
@@ -282,11 +222,19 @@ const fill_question = magpieViews.view_generator(
   {
     answer_container_generator: function (config, CT) {
         return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
                     <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
                     <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
                 </div>`;
-    }
+    },
+    stimulus_container_generator: function (config, CT) {
+      return `<div class='magpie-view'>
+                  <h1 class='magpie-view-title'>${config.title}</h1>
+                  <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[0]}</p>
+                  <p class='magpie-view-question'>"${config.data[CT].question}"</p>
+                  <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[1]}</p>
+                  </div>
+              </div>`;}
+
   }
 );
 
@@ -297,7 +245,6 @@ const fill_answer = magpieViews.view_generator(
     name: 'fill_answer',
     data: flat_filler_answer,
   },
-  //chang eanswer format from button press choice to one click answer
   {
     answer_container_generator: function (config, CT) {
         return `<div class='magpie-view-answer-container'>
@@ -305,7 +252,7 @@ const fill_answer = magpieViews.view_generator(
                     <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
                     <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
                 </div>`;
-    },
+    }
   }
 );
 
@@ -318,8 +265,7 @@ const fill_conclusion = magpieViews.view_generator(
   },
   {
     answer_container_generator: function(config, CT) {
-          return `<p class='magpie-view-question'>${config.data[CT].question}</p>
-                  <div class='magpie-view-answer-container'>
+          return `<div class='magpie-view-answer-container'>
                       <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionLeft}</strong>
                       <label for="1" class='magpie-response-rating'>1</label>
                       <input type="radio" name="answer" id="1" value="1" />
@@ -333,79 +279,17 @@ const fill_conclusion = magpieViews.view_generator(
                       <input type="radio" name="answer" id="5" value="5" />
                       <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionRight}</strong>
                     </div>`;
-    }
-  }
-);
-
-
-
-//try of randomization beteen l1 and l2
-/*
-const question_1 = magpieViews.view_generator(
-  'forced_choice',
-  {
-    trials: 1,
-    name: 'question_1',
-    data: main_question,
-  },
-  {
-    answer_container_generator: function (config, CT) {
-        return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
-                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
-                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-                </div>`;
-    }
-  }
-);
-
-const answer_1 = magpieViews.view_generator(
-  'self_paced_reading',
-  {
-    trials: 1,
-    name: 'answer_1',
-    data: main_answer,
-  },
-  //chang eanswer format from button press choice to one click answer
-  {
-    answer_container_generator: function (config, CT) {
-        return `<div class='magpie-view-answer-container'>
-                    <p class='magpie-view-question'>${config.data[CT].question}</p>
-                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
-                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-                </div>`;
     },
+    stimulus_container_generator:  function (config, CT) {
+      return `<div class='magpie-view'>
+                  <h1 class='magpie-view-title'>${config.title}</h1>
+                  <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[0]}</p>
+                  <p class='magpie-view-question'>"${config.data[CT].question}"</p>
+                  <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD[1]}</p>
+                  </div>
+              </div>`;}
   }
 );
-
-const conclusion_1 = magpieViews.view_generator(
-  'rating_scale',
-  {
-    trials: 1,
-    name: 'conclusion_1',
-    data: main_conclusion,
-  },
-  {
-    answer_container_generator: function(config, CT) {
-          return `<p class='magpie-view-question'>${config.data[CT].question}</p>
-                  <div class='magpie-view-answer-container'>
-                      <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionLeft}</strong>
-                      <label for="1" class='magpie-response-rating'>1</label>
-                      <input type="radio" name="answer" id="1" value="1" />
-                      <label for="2" class='magpie-response-rating'>2</label>
-                      <input type="radio" name="answer" id="2" value="2" />
-                      <label for="3" class='magpie-response-rating'>3</label>
-                      <input type="radio" name="answer" id="3" value="3" />
-                      <label for="4" class='magpie-response-rating'>4</label>
-                      <input type="radio" name="answer" id="4" value="4" />
-                      <label for="5" class='magpie-response-rating'>5</label>
-                      <input type="radio" name="answer" id="5" value="5" />
-                      <strong class='magpie-response-rating-option magpie-view-text'>${config.data[CT].optionRight}</strong>
-                    </div>`;
-    }
-  }
-);
-*/
 
 
 // There are many more templates available:
