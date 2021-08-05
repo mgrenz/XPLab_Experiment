@@ -28,7 +28,7 @@ $("document").ready(function() {
             // Possible deployment methods are:
             // "debug" and "directLink
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "debug",
+            deployMethod: "directLink",
             contact_email: "mgrenz@uos.de",
             //prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
