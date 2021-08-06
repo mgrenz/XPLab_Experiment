@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-Main readme file
-# XPLab Final Project
-
-Replication of the experiment of Westera and Brasoveanu (2014): Ignorance_in_Context_The_Interaction_of_Modified_Numerals_and_QUDs
-
-[Experiment](https://xplab2021-group04-finalproject.netlify.app/)
-=======
 # Ignorance in context: The interaction of modified numerals and QUDs - A replication study
 
 Westera, M. & Brasoveanu, A.(2014). Ignorance in context: The interaction of modified numerals and QUDs. *Proceedings of SALT, 24*, https://doi.org/10.3765/salt.v24i0.2436.
@@ -20,7 +12,7 @@ This experiment published here is a replication of the first experiment of a stu
 
 ## The Repository
 
-All necessary information concerning the replication of the first experiment can be found in the respective subfolders of this repository:
+All necessary information concerning the replication of the first experiment can be found in the respective subfolders of this repository: 
 - analyses: Analyses scripts, divided into pilot and main study
 - data: Collected data, divided into pilot and main study
 - experiments: [_magpie](https://magpie-ea.github.io/magpie-site/) implementation of the first experiment, divided into pilot and main study
@@ -39,4 +31,5 @@ A hard coded double Latin square design was used to randomize and balance the 6 
 1. Online: [Click here](https://xplab2021-group04-finalproject.netlify.app/)
 2. Offline: Clone the repository, run `npm install` and open `index.html`.
 
->>>>>>> test-section
+
+
