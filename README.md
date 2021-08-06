@@ -31,5 +31,3 @@ A hard coded double Latin square design was used to randomize and balance the 6 
 
 1. Online: [Click here](https://xplab2021-group04-finalproject.netlify.app/)
 2. Offline: Clone the repository, run `npm install` and open `index.html`.
-
->>>>>>> test-section
