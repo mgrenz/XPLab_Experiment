@@ -12,7 +12,7 @@ This experiment published here is a replication of the first experiment of a stu
 
 ## The Repository
 
-All necessary information concerning the replication of the first experiment can be found in the respective subfolders of this repository:
+All necessary information concerning the replication of the first experiment can be found in the respective subfolders of this repository: 
 - analyses: Analyses scripts, divided into pilot and main study
 - data: Collected data, divided into pilot and main study
 - experiments: [_magpie](https://magpie-ea.github.io/magpie-site/) implementation of the first experiment, divided into pilot and main study
@@ -30,4 +30,6 @@ A hard coded double Latin square design was used to randomize and balance the 6 
 
 1. Online: [Click here](https://xplab2021-group04-finalproject.netlify.app/)
 2. Offline: Clone the repository, run `npm install` and open `index.html`.
+
+
 
