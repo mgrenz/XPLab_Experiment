@@ -713,6 +713,7 @@ const filler_answer = [
     option1: 'next'
   }, //0
   {
+    type: 'filler',
     id:7,
     condition: 'COMP',
     sentence: 'I | ate | less | than | ten | slices | of | bread | with | cheese.',
