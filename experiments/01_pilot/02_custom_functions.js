@@ -55,7 +55,7 @@ function shuffle_filler_quest(shuffled_indices) {
   q_list = [];
   for (var i = 0; i < shuffled_indices.length; i++) {
     index = shuffled_indices[i];
-    q_list = _.concat(q_list, filler_question_ordered[index])
+    q_list = _.concat(q_list, filler_question[index])
   }
   return q_list;
 };
@@ -65,7 +65,7 @@ function shuffle_filler_answ(shuffled_indices) {
   a_list = [];
   for (var i = 0; i < shuffled_indices.length; i++) {
     index = shuffled_indices[i];
-    a_list = _.concat(a_list, filler_answers_ordered[index])
+    a_list = _.concat(a_list, filler_answer[index])
   }
   return a_list;
 };
@@ -75,7 +75,7 @@ function shuffle_filler_conc(shuffled_indices) {
   c_list = [];
   for (var i = 0; i < shuffled_indices.length; i++) {
     index = shuffled_indices[i];
-    c_list = _.concat(c_list, filler_conclusion_ordered[index])
+    c_list = _.concat(c_list, filler_conclusion[index])
   }
   return c_list;
 };

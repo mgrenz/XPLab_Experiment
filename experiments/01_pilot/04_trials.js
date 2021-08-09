@@ -9,7 +9,7 @@ const question_text = [
       id:1,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Were there at most ten coins in the purse?',
+      question: 'Did you find at most ten of the coins in the wallet?',
       option1: 'Next',
     }, //0
     {
@@ -17,7 +17,7 @@ const question_text = [
       id:1,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'WHAT',
-      question: 'What was in the purse?',
+      question: 'What did you find in the wallet?',
       option1: 'Next',
     }, //1
     {
@@ -25,7 +25,7 @@ const question_text = [
       id:1,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'HOWMANY',
-      question: 'How many coins were there  in the purse? ',
+      question: 'How many of the coins did you find in the wallet?',
       option1: 'Next',
     }, //2
     {
@@ -33,7 +33,7 @@ const question_text = [
       id:2,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you take at most ten pills? out of the bag? ',
+      question: 'Did you find at most ten of the pills in the bag?',
       option1: 'Next',
     }, //3
     {
@@ -41,7 +41,7 @@ const question_text = [
       id:2,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'WHAT',
-      question: 'What did you take out of the bag? ',
+      question: 'What did you find in the bag?',
       option1: 'Next',
     }, //4
     {
@@ -49,7 +49,7 @@ const question_text = [
       id:2,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'HOWMANY',
-      question: 'How many pills did you take out of the bag? ',
+      question: 'How many of the pills did you find in the bag?',
       option1: 'Next',
     }, //5
     {
@@ -57,7 +57,7 @@ const question_text = [
       id:3,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you hear at most ten shots in the distance? ',
+      question: 'Did you hear at most ten of the shots coming from the school shooting?',
       option1: 'Next',
     }, //6
     {
@@ -65,7 +65,7 @@ const question_text = [
       id:3,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'WHAT',
-      question: 'What did you hear? ',
+      question: 'What did you hear coming from the school shooting?',
       option1: 'Next',
     }, //7
     {
@@ -73,7 +73,7 @@ const question_text = [
       id:3,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'HOWMANY',
-      question: 'How many shots did you hear in the distance? ',
+      question: 'How many of the shots did you hear coming from the school shooting?',
       option1: 'Next',
     }, //8
     {
@@ -81,7 +81,7 @@ const question_text = [
       id:4,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you see at most ten thieves in the bank? ',
+      question: 'Did you see at most ten of the robbers in front of the bank?',
       option1: 'Next',
     }, //9
     {
@@ -89,7 +89,7 @@ const question_text = [
       id:4,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'WHAT',
-      question: 'What did you see in the bank? ',
+      question: 'What did you see in front of the bank?',
       option1: 'Next',
     }, //10
     {
@@ -97,7 +97,7 @@ const question_text = [
       id:4,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'HOWMANY',
-      question: 'How many thieves did you see in the bank? ',
+      question: 'How many of the robbers did you see in front of the bank?',
       option1: 'Next',
     }, //11
     {
@@ -105,7 +105,7 @@ const question_text = [
       id:5,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you drink at most ten shots that night? ',
+      question: 'Did you see at most ten of the bills in the purse?',
       option1: 'Next',
     }, //12
     {
@@ -113,7 +113,7 @@ const question_text = [
       id:5,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'WHAT',
-      question: 'What did you drink that night? ',
+      question: 'What did you see in the purse?',
       option1: 'Next',
     }, //13
     {
@@ -121,7 +121,7 @@ const question_text = [
       id:5,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'HOWMANY',
-      question: 'How many shots did you drink that night? ',
+      question: 'How many of the bills did you see in the purse?',
       option1: 'Next',
     }, //14
     {
@@ -129,7 +129,7 @@ const question_text = [
       id:6,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you crash with at most ten cars during the accident?  ',
+      question: 'Did you find at most ten of the shot glasses on the kitchen counter?',
       option1: 'Next',
     }, //15
     {
@@ -137,7 +137,7 @@ const question_text = [
       id:6,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'WHAT',
-      question: 'What did you crash with during the accident?  ',
+      question: 'What did you see on the kitchen counter?',
       option1: 'Next',
     }, //16
     {
@@ -145,7 +145,7 @@ const question_text = [
       id:6,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'HOWMANY',
-      question: 'How many cars did you crash with during the accident?  ',
+      question: 'How many of the shot glasses did you see on the kitchen counter?',
       option1: 'Next',
     }, //17
     //COMP answer condition
@@ -154,7 +154,7 @@ const question_text = [
       id:1,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Were there less than ten coins in the purse?',
+      question: 'Did you find less than ten of the coins in the wallet?',
       option1: 'Next',
     }, //18
     {
@@ -162,7 +162,7 @@ const question_text = [
       id:2,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you take less than ten pills? out of the bag? ',
+      question: ' Did you find less than ten of the pills in the bag?',
       option1: 'Next',
     }, //19
     {
@@ -170,7 +170,7 @@ const question_text = [
       id:3,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you hear less than ten shots in the distance? ',
+      question: 'Did you hear less than ten of the shots coming from the school shooting?',
       option1: 'Next',
     }, //20
     {
@@ -178,7 +178,7 @@ const question_text = [
       id:4,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you see less than ten thieves in the bank? ',
+      question: 'Did you see less than ten of the robbers in front of the bank?',
       option1: 'Next',
     }, //21
     {
@@ -186,7 +186,7 @@ const question_text = [
       id:5,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you drink less than ten shots that night? ',
+      question: 'Did you see less than ten of the bills in the purse?',
       option1: 'Next',
     }, //22
     {
@@ -194,103 +194,129 @@ const question_text = [
       id:6,
       QUD: ['The judge asks:', 'The witness responds:'],
       condition: 'POLAR',
-      question: 'Did you crash with less than ten cars during the accident?  ',
+      question: 'Did you find less than ten of the shot glasses on the kitchen counter?',
       option1: 'Next',
     }, //23
+    // item 6; Howmany: 'find'
+    {
+      type: 'main',
+      id:6,
+      QUD: ['The judge asks:', 'The witness responds:'],
+      condition: 'HOWMANY',
+      question: 'How many of the shot glasses did you find on the kitchen counter?',
+      option1: 'Next',
+    }, //24
 
 ];
 const answer_text = [
+  //item 6: 'find'
     {
       type: 'main',
       id: 1,
       condition: 'COMP',
-      sentence: 'There | were | less | than | ten | coins | in | the | purse.',
+      sentence: 'I | found | less | than | ten | of | the | coins | in | the | wallet.',
       option1: 'next'
     }, //0
     {
       type: 'main',
       id: 2,
       condition: 'COMP',
-      sentence: 'I | had | taken | less | than | ten | pills | out | of | the | bag.',
+      sentence: ' I | found | less | than | ten | of | the | pills | in  | the | bag.',
       option1: 'next'
     }, //1
     {
       type: 'main',
       id: 3,
       condition: 'COMP',
-      sentence: ' I | heard | less | than | ten | shots | in | the | distance.',
+      sentence: ' I | heard | less | than | ten | of | the | shots | coming | from | the | school | shooting.',
       option1: 'next'
     }, //2
     {
       type: 'main',
       id: 4,
       condition: 'COMP',
-      sentence: 'I | saw | less | than | ten | thieves | in | the | bank',
+      sentence: 'I | saw | less | than | ten | of | the | robbers | in | front | of | the | bank.',
       option1: 'next'
     }, //3
     {
       type: 'main',
       id: 5,
       condition: 'COMP',
-      sentence: 'I | drank | less | than | ten | shots | that | night.',
+      sentence: 'I | saw | less | than | ten | of | the | bills | in  | the | purse.',
       option1: 'next'
     }, //4
     {
       type: 'main',
       id: 6,
       condition: 'COMP',
-      sentence: 'I | crashed | with | less | than | ten | cars | during | the | accident.',
+      sentence: 'I | found | less | than | ten | of | the | shot | glasses | on | the | kitchen | counter.',
       option1: 'next'
     }, //5
     {
       type: 'main',
       id: 1,
       condition: 'SUP',
-      sentence: 'There | were | at | most | ten | coins | in | the | purse.',
+      sentence: 'I | found | at | most | ten | of | the | coins | in | the | wallet.',
       option1: 'next'
     }, //6
     {
       type: 'main',
       id:2,
       condition: 'SUP',
-      sentence: 'I | had | taken | at | most | ten | pills | out | of | the | bag.',
+      sentence: 'I | found | at | most | ten | of | the | pills | in  | the | bag.',
       option1: 'next'
     }, //7
     {
       type: 'main',
       id:3,
       condition: 'SUP',
-      sentence: 'I | heard | at | most | ten | shots | in | the | distance.',
+      sentence: 'I | heard | at | most | ten | of | the | shots | coming | from | the | school | shooting.',
       option1: 'next'
     }, //8
     {
       type: 'main',
       id:4,
       condition: 'SUP',
-      sentence: 'I | saw | at | most | ten | thieves | in | the | bank.',
+      sentence: 'I | saw | at | most | ten | of | the | robbers | in | front | of | the | bank.',
       option1: 'next'
     }, //9
     {
       type: 'main',
       id:5,
       condition: 'SUP',
-      sentence: 'I | drank | less | than | ten | shots | that | night.',
+      sentence: 'I | saw | at | most | ten | of | the | bills | in | the | purse.',
       option1: 'next'
     }, //10
     {
       type: 'main',
       id:6,
       condition: 'SUP',
-      sentence: 'I | crashed | with | at | most | ten | cars | during | the | accident.',
+      sentence: 'I | found | at | most | ten | of | the | shot | glasses | on | the | kitchen | counter. ',
       option1: 'next'
-    } //11
+    }, //11
+    //item 6: 'see'
+    {
+      type: 'main',
+      id:6,
+      condition: 'SUP',
+      sentence: 'I | saw | at | most | ten | of | the | shot | glasses | on | the | kitchen | counter.',
+      option1: 'next'
+    }, //12
+    {
+      type: 'main',
+      id:6,
+      condition: 'COMP',
+      sentence: 'I | saw | less | than | ten | of | the | shot | glasses | on | the | kitchen | counter.',
+      option1: 'next'
+    }, //13
 ];
 const conclusion_text = [
+  //item6: 'find'
     {
       type: 'main',
       id:1,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness doesn’t know exactly how many coins there were in the purse.',
+      question: 'The witness doesn’t know exactly how many of the coins she found in the wallet.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
@@ -298,7 +324,7 @@ const conclusion_text = [
       type: 'main',
       id:2,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness doesn’t know exactly how many pills she took out of the bag.  ',
+      question: 'The witness doesn’t know exactly how many of the pills she found in the bag.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //1
@@ -306,7 +332,7 @@ const conclusion_text = [
       type: 'main',
       id:3,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness doesn’t know exactly how many shots they heard in the distance.  ',
+      question: 'The witness doesn’t know exactly how many of the shots she heard coming from the school shooting.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //2
@@ -314,7 +340,7 @@ const conclusion_text = [
       type: 'main',
       id:4,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness doesn’t know exactly how many thieves they saw in the bank.  ',
+      question: 'The witness doesn’t know exactly how many of the robbers she saw in front of the bank.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //3
@@ -322,7 +348,7 @@ const conclusion_text = [
       type: 'main',
       id:5,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness doesn’t know exactly how many shots they drank that night.  ',
+      question: 'The witness doesn’t know exactly how many of the bills she saw in the purse.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //4
@@ -330,625 +356,1710 @@ const conclusion_text = [
       type: 'main',
       id:6,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness doesn’t know exactly how many cars he crashed with during the accident.  ',
+      question: 'The witness doesn’t know exactly how many of the shot glasses she found on the kitchen counter.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
-    } //5
+    }, //5
+    //item 6: 'see'
+    {
+      type: 'main',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness doesn’t know exactly how many of the shot glasses she saw on the kitchen counter.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //6
   ];
 
-//filler information; only fillers with id 7,8,9,10,11,12,13,14,15 are used
+//filler information
+
 const filler_question = [
-  //SUP answer condition
+  //Condition1: Polar-Sup
   {
-    type: 'filler',
-    id:7,
+    type: 'filler-oi',
+    id:1,
     QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you eat with cheese?  ',
+    condition: 'POLAR',
+    question: 'Did you see at most ten of the bread slices on the kitchen counter?',
     option1: 'Next',
   }, //0
   {
-    type: 'filler',
-    id:7,
+    type: 'filler-plau',
+    id:2,
     QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many slices of bread did you eat with cheese? ',
+    condition: 'POLAR',
+    question: 'Did you see at most ten of the balloons flying in the air?',
     option1: 'Next',
   }, //1
   {
-    type: 'filler',
-    id:7,
+    type: 'filler-oi',
+    id:3,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you eat at most ten slices of bread with cheese? ',
+    question: 'Did you find at most ten corpses in the office?',
     option1: 'Next',
   }, //2
   {
-    type: 'filler',
-    id:7,
+    type: 'filler-implau',
+    id:4,
     QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you eat ten slices of bread with cheese? ',
+    condition: 'POLAR',
+    question: 'Did you find at most ten children while trying to escape the fire?',
     option1: 'Next',
   }, //3
   {
-    type: 'filler',
-    id:8,
+    type: 'filler-implau',
+    id:5,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you see at most ten balloons flying in the air? ',
+    question: 'Did you hear at most ten women shouting at this event?',
     option1: 'Next',
   }, //4
   {
-    type: 'filler',
-    id:8,
+    type: 'filler-ov',
+    id:6,
     QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you see flying in the air? ',
+    condition: 'POLAR',
+    question: 'Did you certainly hear at most ten animals howling in the forest?',
     option1: 'Next',
   }, //5
   {
-    type: 'filler',
-    id:8,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many balloons did you see flying in the air? ',
-    option1: 'Next',
-  }, //6
-  {
-    type: 'filler',
-    id:8,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you see ten balloons flying in the air? ',
-    option1: 'Next',
-  }, //7
-  {
-    type: 'filler',
-    id:9,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you find at most ten corpses in the office? ',
-    option1: 'Next',
-  }, //8
-  {
-    type: 'filler',
-    id:9,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you findin the office? ',
-    option1: 'Next',
-  }, //9
-  {
-    type: 'filler',
-    id:9,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many corpses did you find in the office? ',
-    option1: 'Next',
-  }, //10
-  {
-    type: 'filler',
-    id:9,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you find ten corpses in the office? ',
-    option1: 'Next',
-  }, //11
-  {
-    type: 'filler',
-    id:10,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: ' Did you help at most ten children to escape the fire? ',
-    option1: 'Next',
-  }, //12
-  {
-    type: 'filler',
-    id:10,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you do while escaping the fire? ',
-    option1: 'Next',
-  }, //13
-  {
-    type: 'filler',
-    id:10,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many children did you help to escape the fire? ',
-    option1: 'Next',
-  }, //14
-  {
-    type: 'filler',
-    id:10,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you help children to escape the fire? ',
-    option1: 'Next',
-  }, //15
-  {
-    type: 'filler',
-    id:11,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you hear at most ten women shouting at this event? ',
-    option1: 'Next',
-  }, //16
-  {
-    type: 'filler',
-    id:11,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you hear at this event? ',
-    option1: 'Next',
-  }, //17
-  {
-    type: 'filler',
-    id:11,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many women did you hear shouting at this event? ',
-    option1: 'Next',
-  }, //18
-  {
-    type: 'filler',
-    id:11,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you hear women shouting at this event? ',
-    option1: 'Next',
-  }, //19
-  {
-    type: 'filler',
-    id:12,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you hear at most ten animals howling in the forest? ',
-    option1: 'Next',
-  }, //20
-  {
-    type: 'filler',
-    id:12,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you hear in the forest? ',
-    option1: 'Next',
-  }, //21
-  {
-    type: 'filler',
-    id:12,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many animals did you hear howling in the forest? ',
-    option1: 'Next',
-  }, //22
-  {
-    type: 'filler',
-    id:12,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you hear animals howling in the forest? ',
-    option1: 'Next',
-  }, //23
-  {
-    type: 'filler',
-    id:13,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you kiss at most ten strangers at the party? ',
-    option1: 'Next',
-  }, //24
-  {
-    type: 'filler',
-    id:13,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you do at the party? ',
-    option1: 'Next',
-  }, //25
-  {
-    type: 'filler',
-    id:13,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many strangers did you kiss at the party? ',
-    option1: 'Next',
-  }, //26
-  {
-    type: 'filler',
-    id:13,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you kiss strangers at the party? ',
-    option1: 'Next',
-  }, //27
-  {
-    type: 'filler',
-    id:14,
-    QUD:['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you take at most ten pictures of the assault? ',
-    option1: 'Next',
-  }, //28
-  {
-    type: 'filler',
-    id:14,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you do during the assault? ',
-    option1: 'Next',
-  }, //29
-  {
-    type: 'filler',
-    id:14,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many pictures of the assault did you take? ',
-    option1: 'Next',
-  }, //30
-  {
-    type: 'filler',
-    id:14,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you take pictures of the assault? ',
-    option1: 'Next',
-  }, //31
-  {
-    type: 'filler',
-    id:15,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you use at most ten different types of drugs that night? ',
-    option1: 'Next',
-  }, //32
-  {
-    type: 'filler',
-    id:15,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'WHAT',
-    question: 'What did you use that night? ',
-    option1: 'Next',
-  }, //33
-  {
-    type: 'filler',
-    id:15,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'HOWMANY',
-    question: 'How many different types of drugs did you use that night? ',
-    option1: 'Next',
-  }, //34
-  {
-    type: 'filler',
-    id:15,
-    QUD: ['The judge asks:', 'The witness responds:'],
-    condition: 'DID',
-    question: 'Did you use ten different types of drugs that night? ',
-    option1: 'Next',
-  }, //35
-  //COMP answer condition
-  {
-    type: 'filler',
+    type: 'filler-ov',
     id:7,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you eat less than ten slices of bread with cheese? ',
+    question: 'Did you find at most ten of the lollipops in the drawer?',
     option1: 'Next',
-  }, //36
+  }, //6
   {
-    type: 'filler',
+    type: 'filler-oi',
     id:8,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you see less than ten balloons flying in the air? ',
+    question: 'Did you approximately find at most ten pictures of the assault in the locker?',
     option1: 'Next',
-  }, //37
+  }, //7
   {
-    type: 'filler',
+    type: 'filler-implau',
     id:9,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you find less than ten corpses in the office? ',
+    question: 'Did you certainly see at most ten drug addicts at the party?',
     option1: 'Next',
-  }, //38
+  }, //8
+  //condition2: polar-comp
   {
-    type: 'filler',
-    id:10,
+    type: 'filler-ov',
+    id:1,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: ' Did you help less than ten children to escape the fire? ',
+    question: 'Did you approximately see less than ten of the bread slices on the kitchen counter?',
     option1: 'Next',
-  }, //39
+  }, //0
   {
-    type: 'filler',
-    id:11,
+    type: 'filler-implau',
+    id:2,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you hear less than ten women shouting at this event? ',
+    question: 'Did you only see less than ten of the balloons flying in the air?',
     option1: 'Next',
-  }, //40
+  }, //1
   {
-    type: 'filler',
-    id:12,
+    type: 'filler-oi',
+    id:3,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you hear less than ten animals howling in the forest? ',
+    question: 'Did you certainly find less than ten corpses in the office?',
     option1: 'Next',
-  }, //41
+  }, //2
   {
-    type: 'filler',
-    id:13,
+    type: 'filler-implau',
+    id:4,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you kiss less than ten strangers at the party? ',
+    question: 'Did you certainly find less than ten children while trying to escape the fire?',
     option1: 'Next',
-  }, //42
+  }, //3
   {
-    type: 'filler',
-    id:14,
-    QUD:['The judge asks:', 'The witness responds:'],
-    condition: 'POLAR',
-    question: 'Did you take less than ten pictures of the assault? ',
-    option1: 'Next',
-  }, //43
-  {
-    type: 'filler',
-    id:15,
+    type: 'filler-implau',
+    id:5,
     QUD: ['The judge asks:', 'The witness responds:'],
     condition: 'POLAR',
-    question: 'Did you use less than ten different types of drugs that night? ',
+    question: 'Did you hear less than ten women shouting at this event?',
     option1: 'Next',
-  }, //44
-
-
-
+  }, //4
+  {
+    type: 'filler-oi',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'POLAR',
+    question: 'Did you hear less than ten animals howling in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'POLAR',
+    question: 'Did you find nearly less than ten of the lollipops in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-oi',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'POLAR',
+    question: 'Did you certainly find less than ten pictures of the assault in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'POLAR',
+    question: 'Did you see only less than ten drug addicts at the party?',
+    option1: 'Next',
+  }, //8
+  //condition3: what-sup
+  {
+    type: 'filler-plau',
+    id:1,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly see on the kitchen counter?',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-ov',
+    id:2,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly see flying in the air?',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-ov',
+    id:3,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly find in the office?',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-plau',
+    id:4,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly find while trying to escape the fire?',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you approximately hear at this event?',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you probably hear in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-ov',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you probably find in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-ov',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly find in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly see at the party?',
+    option1: 'Next',
+  }, //8
+  //condition4: what-comp
+  {
+    type: 'filler-implau',
+    id:1,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly see on the kitchen counter?',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-plau',
+    id:2,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you probably see flying in the air?',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly find in the office?',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you find while trying to escape the fire?',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-implau',
+    id:5,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly hear at this event?',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you hear in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you certainly find in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-oi',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you find in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'WHAT',
+    question: 'What did you probably see at the party?',
+    option1: 'Next',
+  }, //8
+  //condition5: howmany-sup
+  {
+    type: 'filler-ov',
+    id:1,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many slices of the bread did you approximately see on the kitchen counter?',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-oi',
+    id:2,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many of the balloons did you approximately see flying in the air?',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many corpses did you certainly find in the office?',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many children did you probably find while trying to escape the fire?',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many women did you certainly hear shouting at this event?',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-oi',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many animals did you approximately see roaming in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many of the lollipops did you certainly find in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-ov',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many pictures of the assault did you probably find in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-implau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many drug addicts did you approximately see at the party?',
+    option1: 'Next',
+  }, //8
+  //condition6: howmany-comp
+  {
+    type: 'filler-implau',
+    id:1,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many slices of the bread did you see on the kitchen counter?',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-implau',
+    id:2,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'Approximately how many of the balloons did you see flying in the air?',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many corpses did you certainly find in the office?',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many children did you approximately find while trying to escape the fire?',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many women did you approximately hear shouting at this event?',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many animals did you see roaming in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many of the lollipops did you probably find in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-oi',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many pictures of the assault did you find in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-implau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'HOWMANY',
+    question: 'How many drug addicts did you probably see at the party?',
+    option1: 'Next',
+  }, //8
+  //condition7: did-sup
+  {
+    type: 'filler-oi',
+    id:1,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you only see ten bread slices on the kitchen counter?',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-oi',
+    id:2,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you certainly see ten balloons flying in the air?',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you find only ten corpses in the office?',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you find children while trying to escape the fire?',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you hear women shouting at this event?',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-plau',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you certainly see animals roaming in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-plau',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you only find ten lollipops in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-plau',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you see only ten pictures of the assault in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you only see ten drug addicts at the party?',
+    option1: 'Next',
+  }, //8
+  //condition8: did-comp
+  {
+    type: 'filler-plau',
+    id:1,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you approximately see ten bread slices on the kitchen counter?',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-plau',
+    id:2,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you only see ten of the balloons flying in the air?',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-ov',
+    id:3,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you find only ten corpses in the office?',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-plau',
+    id:4,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you find children while trying to escape the fire?',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you hear women shouting at this event?',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you see animals roaming in the forest?',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-ov',
+    id:7,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you only see ten of the lollipops in the drawer?',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-ov',
+    id:8,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you only see ten pictures of the assault in the locker?',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    QUD: ['The judge asks:', 'The witness responds:'],
+    condition: 'DID',
+    question: 'Did you see only ten drug addicts at the party?',
+    option1: 'Next',
+  }, //8
 ];
 const filler_answer = [
+  //Condition1: Polar-Sup
   {
-    type: 'filler',
-    id:7,
+    type: 'filler-oi',
+    id:1,
     condition: 'SUP',
-    sentence: 'I | ate | at | most | ten | slices | of | bread | with | cheese.',
-    option1: 'next'
+    sentence: 'I | saw | at | most | ten | of | the | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
   }, //0
   {
-    id:7,
-    condition: 'COMP',
-    sentence: 'I | ate | less | than | ten | slices | of | bread | with | cheese.',
-    option1: 'next'
+    type: 'filler-plau',
+    id:2,
+    condition: 'SUP',
+    sentence: 'I | saw | only | at | most | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
   }, //1
   {
-    type: 'filler',
-    id:8,
-    condition: 'SUP',
-    sentence: 'I | saw | at | most | ten | balloons | flying | in | the | air.',
-    option1: 'next'
-  }, //2
-  {
-    type: 'filler',
-    id:8,
-    condition: 'COMP',
-    sentence: 'I | saw | less | than | ten | balloons | flying | in | the | air.',
-    option1: 'next'
-  }, //3
-  {
-    type: 'filler',
-    id:9,
+    type: 'filler-oi',
+    id:3,
     condition: 'SUP',
     sentence: 'I | found | at | most | ten | corpses | in | the | office.',
-    option1: 'next'
-  }, //4
-  {
-    type: 'filler',
-    id:9,
-    condition: 'COMP',
-    sentence: 'I | found | less | than | ten | corpses | in | the | office.',
-    option1: 'next'
-  }, //5
-  {
-    type: 'filler',
-    id:10,
-    condition: 'SUP',
-    sentence: 'I | helped | at | most | ten | children | to | escape | the | fire.',
-    option1: 'next'
-  }, //6
-  {
-    type: 'filler',
-    id:10,
-    condition: 'COMP',
-    sentence: 'I | helped | less | than | ten | children | to | escape | the | fire.',
-    option1: 'next'
-  }, //7
-  {
-    type: 'filler',
-    id:11,
-    condition: 'SUP',
-    sentence: 'I | heard | at | most | ten | women | shouting | at | this | event. ',
-    option1: 'next'
-  }, //8
-  {
-    type: 'filler',
-    id:11,
-    condition: 'COMP',
-    sentence: 'I | heard | less| than | ten | women | shouting | at | this | event.',
-    option1: 'next'
-  }, //9
-  {
-    type: 'filler',
-    id:12,
-    condition: 'SUP',
-    sentence: 'I | heard | at | most | ten | animals | howling | in | the | forest.',
-    option1: 'next'
-  }, //10
-  {
-    type: 'filler',
-    id:12,
-    condition: 'COMP',
-    sentence: 'I | heard | less | than | ten | animals | howling | in | the | forest.',
-    option1: 'next'
-  }, //11
-  {
-    type: 'filler',
-    id:13,
-    condition: 'SUP',
-    sentence: 'I | kissed | at | most | ten | strangers | at | the | party.',
-    option1: 'next'
-  }, //12
-  {
-    type: 'filler',
-    id:13,
-    condition: 'COMP',
-    sentence: 'I | kissed | less | than | ten | strangers | at | the | party.',
-    option1: 'next'
-  }, //13
-  {
-    type: 'filler',
-    id:14,
-    condition: 'SUP',
-    sentence: 'I | took | at | most | ten | pictures | of | the | assault.',
-    option1: 'next'
-  }, //14
-  {
-    type: 'filler',
-    id:14,
-    condition: 'COMP',
-    sentence: 'I | took | less | than | ten | pictures | of the | assault. ',
-    option1: 'next'
-  }, //15
-  {
-    type: 'filler',
-    id:15,
-    condition: 'SUP',
-    sentence: 'I | used | at | most | ten | different | types | of | drugs | that | night.',
-    option1: 'next'
-  }, //16
-  {
-    type: 'filler',
-    id:15,
-    condition: 'COMP',
-    sentence: ' I | used | less | than | ten | different | types | of | drugs | that | night.',
-    option1: 'next'
-  }, //17
-  //bis hierher
-  {
-    type: 'filler',
-    id:16,
-    condition: 'SUP',
-    sentence: ' I | hiked | at | most | ten | kilometers | up | a | mountain.',
-    option1: 'next'
-  }, //18
-  {
-    type: 'filler',
-    id:16,
-    condition: 'COMP',
-    sentence: 'I | hiked | less | than | ten | kilometers | up | a | mountain.',
-    option1: 'next'
-  }, //19
-  {
-    type: 'filler',
-    id:17,
-    condition: 'SUP',
-    sentence: 'I | saw | at | most | ten | lollipops | in | the | drawer.',
-    option1: 'next'
-  }, //20
-  {
-    type: 'filler',
-    id:17,
-    condition: 'COMP',
-    sentence: 'I | saw | less | than | ten | lollipops | in | the | drawer.',
-    option1: 'next'
-  }, //21
-  {
-    type: 'filler',
-    id:18,
-    condition: 'SUP',
-    sentence: 'I | fed | at | most | ten | times | an | animals | in | the | zoo.',
-    option1: 'next'
-  }, //22
-  {
-    type: 'filler',
-    id:18,
-    condition: 'COMP',
-    sentence: 'I | fed | less | than | times | an | animals | in | the | zoo.',
-    option1: 'next'
-  }, //23
-];
-const filler_conclusion = [
-  {
-    type: 'filler',
-    id:7,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many slices of bread they ate with cheese.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //0
-  {
-    type: 'filler',
-    id:8,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many balloons they saw flying in the air.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
-  }, //1
-  {
-    type: 'filler',
-    id:9,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many corpses they saw in the office.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    option1: 'Next',
   }, //2
   {
-    type: 'filler',
-    id:10,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many children they helped to escape the fire.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    type: 'filler-implau',
+    id:4,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
   }, //3
   {
-    type: 'filler',
-    id:11,
-    QUD:['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many women they heard shouting at this event.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    type: 'filler-implau',
+    id:5,
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | women | shouting | at | this | event.',
+    option1: 'Next',
   }, //4
   {
-    type: 'filler',
-    id:12,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many animals they heard howling in the forest.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    type: 'filler-ov',
+    id:6,
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | animals | howling | in | the | forest.',
+    option1: 'Next',
   }, //5
   {
-    type: 'filler',
-    id:13,
-    QUD:['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many strangers they kissed at the party.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    type: 'filler-ov',
+    id:7,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
   }, //6
   {
-    type: 'filler',
-    id:14,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many pictures they took of the assault.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    type: 'filler-oi',
+    id:8,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | pictures | of | the | assault | in | the | locker.',
+    option1: 'Next',
   }, //7
   {
-    type: 'filler',
-    id:15,
-    QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-    question: 'The witness doesn’t know exactly how many different types of drugs they used that night.  ',
-    optionLeft: 'not justifiable at all',
-    optionRight: 'strongly justifiable',
+    type: 'filler-implau',
+    id:9,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
   }, //8
-];
+  //Condition2: Polar-comp
+  {
+    type: 'filler-ov',
+    id:1,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | of | the | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-implau',
+    id:2,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    condition: 'COMP',
+    sentence: 'I  | only | found | less | than | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-implau',
+    id:5,
+    condition: 'COMP',
+    sentence: 'I | only | heard | less| than | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-oi',
+    id:6,
+    condition: 'COMP',
+    sentence: 'I | heard | less | than | ten | animals | howling | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-oi',
+    id:8,
+    condition: 'COMP',
+    sentence: 'I | certainly | found | less | than | ten | pictures | of the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    condition: 'COMP',
+    sentence: 'I | only | saw | less | than | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
+  //Condition3: What-Sup
+  {
+    type: 'filler-plau',
+    id:1,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | of | the | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-ov',
+    id:2,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-ov',
+    id:3,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-plau',
+    id:4,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | animals | howling | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-ov',
+    id:7,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-ov',
+    id:8,
+    condition: 'SUP',
+    sentence: 'I | only | found | at | most | ten | pictures | of | the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    condition: 'SUP',
+    sentence: 'I | only | saw | at | most | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
+  //Condition4: what-comp
+  {
+    type: 'filler-implau',
+    id:1,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | of | the | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-plau',
+    id:2,
+    condition: 'COMP',
+    sentence: 'I | only | saw | less | than | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-implau',
+    id:5,
+    condition: 'COMP',
+    sentence: 'I | heard | less | than | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    condition: 'COMP',
+    sentence: 'I | only | heard | less | than | ten | animals | howling | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-oi',
+    id:8,
+    condition: 'COMP',
+    sentence: 'I | only | found | less | than | ten | pictures | of the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    condition: 'COMP',
+    sentence: 'I | only | saw | less | than | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
+  //Condition5: howmany-sup
+  {
+    type: 'filler-ov',
+    id:1,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | of | the | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-oi',
+    id:2,
+    condition: 'SUP',
+    sentence: 'I | only | saw | at | most | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    condition: 'SUP',
+    sentence: 'I | heard | at | most | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-oi',
+    id:6,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | animals | roamin | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-ov',
+    id:8,
+    condition: 'SUP',
+    sentence: 'I | probably | found | at | most | ten | pictures | of | the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
+  //condition6: howmany-comp
+  {
+    type: 'filler-implau',
+    id:1,
+    condition: 'COMP',
+    sentence: 'I | only | saw | less | than | ten | of | the | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-implau',
+    id:2,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    condition: 'COMP',
+    sentence: 'I | heard | less | than | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    condition: 'COMP',
+    sentence: 'I | only | saw | less | than | ten | animals | roaming | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-oi',
+    id:7,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-oi',
+    id:8,
+    condition: 'COMP',
+    sentence: 'I | found | only | less | than | ten | pictures | of the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-implau',
+    id:9,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
+  //condition7: did-sup
+  {
+    type: 'filler-oi',
+    id:1,
+    condition: 'SUP',
+    sentence: 'I | probably | saw | at | most | ten | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-oi',
+    id:2,
+    condition: 'SUP',
+    sentence: 'I | probably | saw | at | most | ten | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-oi',
+    id:3,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-implau',
+    id:4,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    condition: 'SUP',
+    sentence: 'I | certainly | heard | at | most | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-plau',
+    id:6,
+    condition: 'SUP',
+    sentence: 'I | probably | saw | at | most | ten | animals | roaming | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-plau',
+    id:7,
+    condition: 'SUP',
+    sentence: 'I | found | at | most | ten | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-plau',
+    id:8,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | pictures | of | the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    condition: 'SUP',
+    sentence: 'I | saw | at | most | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
+  //condition8: did-comp
+  {
+    type: 'filler-plau',
+    id:1,
+    condition: 'COMP',
+    sentence: 'I | saw | probably | less | than | ten | bread | slices | on | the | kitchen | counter.',
+    option1: 'Next',
+  }, //0
+  {
+    type: 'filler-plau',
+    id:2,
+    condition: 'COMP',
+    sentence: 'I | probably | saw | less | than | ten | of | the | balloons | flying | in | the | air.',
+    option1: 'Next',
+  }, //1
+  {
+    type: 'filler-ov',
+    id:3,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | corpses | in | the | office.',
+    option1: 'Next',
+  }, //2
+  {
+    type: 'filler-plau',
+    id:4,
+    condition: 'COMP',
+    sentence: 'I | found | less | than | ten | children | while | trying | to | escape | the | fire.',
+    option1: 'Next',
+  }, //3
+  {
+    type: 'filler-plau',
+    id:5,
+    condition: 'COMP',
+    sentence: 'I | heard | less| than | ten | women | shouting | at | this | event.',
+    option1: 'Next',
+  }, //4
+  {
+    type: 'filler-ov',
+    id:6,
+    condition: 'COMP',
+    sentence: 'I | approximately | saw | less | than | ten | animals | roaming | in | the | forest.',
+    option1: 'Next',
+  }, //5
+  {
+    type: 'filler-ov',
+    id:7,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | of | the | lollipops | in | the | drawer.',
+    option1: 'Next',
+  }, //6
+  {
+    type: 'filler-ov',
+    id:8,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | pictures | of the | assault | in | the | locker.',
+    option1: 'Next',
+  }, //7
+  {
+    type: 'filler-plau',
+    id:9,
+    condition: 'COMP',
+    sentence: 'I | saw | less | than | ten | drug | addicts | at | the | party.',
+    option1: 'Next',
+  }, //8
 
+];
+const filler_conclusion = [
+    //Condition1: Polar-Sup
+    {
+      type: 'filler-oi',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw ten of the bread slices on the kitchen counter.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of the balloons she saw in the air is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that they saw eleven corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children they found trying to escape the fire is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she heard nine animals howling in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she found ten of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw 11 pictures of the assault in the locker',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably high. ',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition2: Polar-comp
+    {
+      type: 'filler-ov',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine of the bread slices on the kitchen counter.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the balloons she saw flying in the air is considerably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children she found trying to escape the fire is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she heard eleven animals howling in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she found ten of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven pictures of the assault in the locker.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition3: what-Sup
+    {
+      type: 'filler-plau',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of bread slices is considerably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw ten of the balloons flying in the air.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children she found trying to escape the fire is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she heard ten animals howling in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she found ten of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine pictures of the assault in the locker.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition4: what-comp
+    {
+      type: 'filler-implau',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the bread slices is considerably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the balloons flying in the air is considerably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw ten corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children she found trying to escape the fire is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she heard nine animals howling in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she found eleven of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven pictures of the assault in the locker.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of drug addicts she saw at the party is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition5: howmany-sup
+    {
+      type: 'filler-ov',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine slices of the bread on the kitchen counter.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven of the balloons flying in the air.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw 11 corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children she found trying to escape the fire is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven animals roaming in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she found eleven of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine pictures of the assault in the locker.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition6: howmany-comp
+    {
+      type: 'filler-implau',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the bread slices she saw on the kitchen counter is considerably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the balloons she saw flying in the air is considerably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children she found trying to escape the fire is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine animals roaming in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she found eleven of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven pictures of the assault in the locker.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition7: did-sup
+    {
+      type: 'filler-oi',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that it is possible that she saw eleven bread slices on the kitchen counter.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven balloons flying in the air.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-oi',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw eleven corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-implau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children they found trying to escape the fire is comparably high.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of animals she saw roaming in the forest is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of lollipops she found in the drawer is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of pictures she saw in the locker is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    //Condition8: did-comp
+    {
+      type: 'filler-plau',
+      id:1,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the bread slices she saw on the kitchen counter is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:2,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks that the number of the balloons she saw flying in the air is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:3,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine corpses at the office.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:4,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of children she found trying to escape the fire is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:5,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of women she heard shouting at this event is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:6,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she heard nine animals roaming in the forest.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:7,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine of the lollipops in the drawer.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-ov',
+      id:8,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness considers it possible that she saw nine pictures of the assault in the locker.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+    {
+      type: 'filler-plau',
+      id:9,
+      QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
+      question: 'The witness thinks the number of drug addicts she saw at the party is comparably low.',
+      optionLeft: 'not justifiable at all',
+      optionRight: 'strongly justifiable',
+    }, //0
+];
 
 //latin square design
 //use double latin square design to create 6 item lists
@@ -1008,7 +2119,7 @@ const question_ordered_1 = [
     question_text[14],
     question_text[11],
     question_text[8],
-    question_text[17],
+    question_text[24],
     question_text[5],
     question_text[2],
   ], //B
@@ -1036,7 +2147,7 @@ const answers_ordered_1 = [
     answer_text[9],
     answer_text[7],
     answer_text[6],
-    answer_text[11],
+    answer_text[12],
   ],
   [
     answer_text[3],
@@ -1058,7 +2169,7 @@ const answers_ordered_1 = [
     answer_text[10],
     answer_text[9],
     answer_text[8],
-    answer_text[11],
+    answer_text[12],
     answer_text[7],
     answer_text[6],
   ],
@@ -1072,7 +2183,7 @@ const answers_ordered_1 = [
   ],
   [
     answer_text[1],
-    answer_text[5],
+    answer_text[13],
     answer_text[4],
     answer_text[0],
     answer_text[2],
@@ -1086,7 +2197,7 @@ const conclusion_ordered_1 = [
     conclusion_text[3],
     conclusion_text[1],
     conclusion_text[0],
-    conclusion_text[5],
+    conclusion_text[6],
   ],
   [
     conclusion_text[3],
@@ -1108,7 +2219,7 @@ const conclusion_ordered_1 = [
     conclusion_text[4],
     conclusion_text[3],
     conclusion_text[2],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[1],
     conclusion_text[0],
   ],
@@ -1122,7 +2233,7 @@ const conclusion_ordered_1 = [
   ],
   [
     conclusion_text[1],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[4],
     conclusion_text[0],
     conclusion_text[2],
@@ -1178,7 +2289,7 @@ const question_ordered_2 = [
   ],//F
   [
     question_text[5],
-    question_text[17],
+    question_text[24],
     question_text[14],
     question_text[2],
     question_text[8],
@@ -1199,7 +2310,7 @@ const answers_ordered_2 = [
     answer_text[8],
     answer_text[6],
     answer_text[10],
-    answer_text[11],
+    answer_text[12],
     answer_text[7],
   ],
   [
@@ -1219,7 +2330,7 @@ const answers_ordered_2 = [
     answer_text[0],
   ],
   [
-    answer_text[5],
+    answer_text[13],
     answer_text[0],
     answer_text[1],
     answer_text[2],
@@ -1228,7 +2339,7 @@ const answers_ordered_2 = [
   ],
   [
     answer_text[7],
-    answer_text[11],
+    answer_text[12],
     answer_text[10],
     answer_text[6],
     answer_text[8],
@@ -1249,7 +2360,7 @@ const conclusion_ordered_2 = [
     conclusion_text[2],
     conclusion_text[0],
     conclusion_text[4],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[1],
   ],
   [
@@ -1269,7 +2380,7 @@ const conclusion_ordered_2 = [
     conclusion_text[0],
   ],
   [
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[0],
     conclusion_text[1],
     conclusion_text[2],
@@ -1278,7 +2389,7 @@ const conclusion_ordered_2 = [
   ],
   [
     conclusion_text[1],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[4],
     conclusion_text[0],
     conclusion_text[2],
@@ -1305,7 +2416,7 @@ const question_ordered_3 = [
     question_text[8],
     question_text[2],
     question_text[14],
-    question_text[17],
+    question_text[24],
     question_text[5],
   ], //B
   [
@@ -1356,14 +2467,14 @@ const answers_ordered_3 = [
     answer_text[8],
     answer_text[6],
     answer_text[10],
-    answer_text[11],
+    answer_text[12],
     answer_text[7],
   ],
   //B
   [
     answer_text[0],
     answer_text[1],
-    answer_text[5],
+    answer_text[13],
     answer_text[3],
     answer_text[4],
     answer_text[2],
@@ -1389,7 +2500,7 @@ const answers_ordered_3 = [
   //E
   [
     answer_text[7],
-    answer_text[11],
+    answer_text[12],
     answer_text[10],
     answer_text[6],
     answer_text[8],
@@ -1411,13 +2522,13 @@ const conclusion_ordered_3 = [
     conclusion_text[2],
     conclusion_text[0],
     conclusion_text[4],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[1],
   ],
   [
     conclusion_text[0],
     conclusion_text[1],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[3],
     conclusion_text[4],
     conclusion_text[2],
@@ -1440,7 +2551,7 @@ const conclusion_ordered_3 = [
   ],
   [
     conclusion_text[1],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[4],
     conclusion_text[0],
     conclusion_text[2],
@@ -1487,7 +2598,7 @@ const question_ordered_4 = [
     question_text[1],
   ], //F
   [
-    question_text[17],
+    question_text[24],
     question_text[2],
     question_text[5],
     question_text[8],
@@ -1525,7 +2636,7 @@ const answers_ordered_4 = [
   [
     answer_text[6],
     answer_text[7],
-    answer_text[11],
+    answer_text[12],
     answer_text[9],
     answer_text[10],
     answer_text[8],
@@ -1535,13 +2646,13 @@ const answers_ordered_4 = [
     answer_text[4],
     answer_text[3],
     answer_text[2],
-    answer_text[5],
+    answer_text[13],
     answer_text[1],
     answer_text[0],
   ],
   //F
   [
-    answer_text[11],
+    answer_text[12],
     answer_text[6],
     answer_text[7],
     answer_text[8],
@@ -1579,7 +2690,7 @@ const conclusion_ordered_4 = [
   [
     conclusion_text[0],
     conclusion_text[1],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[3],
     conclusion_text[4],
     conclusion_text[2],
@@ -1588,12 +2699,12 @@ const conclusion_ordered_4 = [
     conclusion_text[4],
     conclusion_text[3],
     conclusion_text[2],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[1],
     conclusion_text[0],
   ],
   [
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[0],
     conclusion_text[1],
     conclusion_text[2],
@@ -1635,7 +2746,7 @@ const question_ordered_5 = [
   [
     question_text[2],
     question_text[5],
-    question_text[17],
+    question_text[24],
     question_text[11],
     question_text[14],
     question_text[8],
@@ -1672,7 +2783,7 @@ const answers_ordered_5 = [
     answer_text[3],
     answer_text[1],
     answer_text[0],
-    answer_text[5],
+    answer_text[13],
   ],
   //F
   [
@@ -1687,7 +2798,7 @@ const answers_ordered_5 = [
   [
     answer_text[6],
     answer_text[7],
-    answer_text[11],
+    answer_text[12],
     answer_text[9],
     answer_text[10],
     answer_text[8],
@@ -1697,7 +2808,7 @@ const answers_ordered_5 = [
     answer_text[10],
     answer_text[9],
     answer_text[8],
-    answer_text[11],
+    answer_text[12],
     answer_text[7],
     answer_text[6],
   ],
@@ -1728,7 +2839,7 @@ const conclusion_ordered_5 = [
     conclusion_text[3],
     conclusion_text[1],
     conclusion_text[0],
-    conclusion_text[5],
+    conclusion_text[6],
   ],
   [
     conclusion_text[3],
@@ -1741,7 +2852,7 @@ const conclusion_ordered_5 = [
   [
     conclusion_text[0],
     conclusion_text[1],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[3],
     conclusion_text[4],
     conclusion_text[2],
@@ -1750,7 +2861,7 @@ const conclusion_ordered_5 = [
     conclusion_text[4],
     conclusion_text[3],
     conclusion_text[2],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[1],
     conclusion_text[0],
   ],
@@ -1784,7 +2895,7 @@ const question_ordered_6 = [
     question_text[11],
     question_text[5],
     question_text[2],
-    question_text[17],
+    question_text[24],
   ], //B
   [
     question_text[10],
@@ -1834,7 +2945,7 @@ const answers_ordered_6 = [
     answer_text[9],
     answer_text[7],
     answer_text[6],
-    answer_text[11],
+    answer_text[12],
   ],
   //B
   [
@@ -1842,7 +2953,7 @@ const answers_ordered_6 = [
     answer_text[2],
     answer_text[0],
     answer_text[4],
-    answer_text[5],
+    answer_text[13],
     answer_text[1],
   ],
   //F
@@ -1865,7 +2976,7 @@ const answers_ordered_6 = [
   ],
   //A
   [
-    answer_text[11],
+    answer_text[12],
     answer_text[6],
     answer_text[7],
     answer_text[8],
@@ -1890,14 +3001,14 @@ const conclusion_ordered_6 = [
     conclusion_text[3],
     conclusion_text[1],
     conclusion_text[0],
-    conclusion_text[5],
+    conclusion_text[6],
   ],
   [
     conclusion_text[3],
     conclusion_text[2],
     conclusion_text[0],
     conclusion_text[4],
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[1],
   ],
   [
@@ -1917,7 +3028,7 @@ const conclusion_ordered_6 = [
     conclusion_text[0],
   ],
   [
-    conclusion_text[5],
+    conclusion_text[6],
     conclusion_text[0],
     conclusion_text[1],
     conclusion_text[2],
@@ -1939,286 +3050,6 @@ const flat_answer_6 = _.flatten(answers_ordered_6);
 const flat_conclusion_6 = _.flatten(conclusion_ordered_6);
 
 
-//filler lists
-//not randomized
-const filler_question_ordered = [
-
-    filler_question[0],
-    filler_question[1],
-    filler_question[2],
-    filler_question[3],
-    filler_question[0],
-    filler_question[1],
-    filler_question[36],
-    filler_question[3],
-   //id7
-
-    filler_question[4],
-    filler_question[5],
-    filler_question[6],
-    filler_question[7],
-    filler_question[37],
-    filler_question[5],
-    filler_question[6],
-    filler_question[7],
-   //id8
-
-    filler_question[8],
-    filler_question[9],
-    filler_question[10],
-    filler_question[11],
-    filler_question[38],
-    filler_question[9],
-    filler_question[10],
-    filler_question[11],
-   //id9
-
-    filler_question[12],
-    filler_question[13],
-    filler_question[14],
-    filler_question[15],
-    filler_question[39],
-    filler_question[13],
-    filler_question[14],
-    filler_question[15],
-   //id10
-
-    filler_question[16],
-    filler_question[17],
-    filler_question[18],
-    filler_question[19],
-    filler_question[40],
-    filler_question[17],
-    filler_question[18],
-    filler_question[19],
-   //id11
-
-    filler_question[20],
-    filler_question[21],
-    filler_question[22],
-    filler_question[23],
-    filler_question[41],
-    filler_question[21],
-    filler_question[22],
-    filler_question[23],
-  //id12
-
-    filler_question[24],
-    filler_question[25],
-    filler_question[26],
-    filler_question[27],
-    filler_question[42],
-    filler_question[25],
-    filler_question[26],
-    filler_question[27],
-   //id13
-
-    filler_question[28],
-    filler_question[29],
-    filler_question[30],
-    filler_question[31],
-    filler_question[43],
-    filler_question[29],
-    filler_question[30],
-    filler_question[31],
-   //id14
-
-    filler_question[32],
-    filler_question[33],
-    filler_question[34],
-    filler_question[35],
-    filler_question[44],
-    filler_question[33],
-    filler_question[34],
-    filler_question[35],
-   //id15
-
-];
-const filler_answers_ordered = [
-
-    filler_answer[0],
-    filler_answer[0],
-    filler_answer[0],
-    filler_answer[0],
-    filler_answer[1],
-    filler_answer[1],
-    filler_answer[1],
-    filler_answer[1],
-   //id7
-
-    filler_answer[2],
-    filler_answer[2],
-    filler_answer[2],
-    filler_answer[2],
-    filler_answer[3],
-    filler_answer[3],
-    filler_answer[3],
-    filler_answer[3],
-   //id8
-
-    filler_answer[4],
-    filler_answer[4],
-    filler_answer[4],
-    filler_answer[4],
-    filler_answer[5],
-    filler_answer[5],
-    filler_answer[5],
-    filler_answer[5],
-
-   //id9
-
-    filler_answer[6],
-    filler_answer[6],
-    filler_answer[6],
-    filler_answer[6],
-    filler_answer[7],
-    filler_answer[7],
-    filler_answer[7],
-    filler_answer[7],
-   //id10
-
-    filler_answer[8],
-    filler_answer[8],
-    filler_answer[8],
-    filler_answer[8],
-    filler_answer[9],
-    filler_answer[9],
-    filler_answer[9],
-    filler_answer[9],
-   //id11
-
-    filler_answer[10],
-    filler_answer[10],
-    filler_answer[10],
-    filler_answer[10],
-    filler_answer[11],
-    filler_answer[11],
-    filler_answer[11],
-    filler_answer[11],
-   //id12
-
-    filler_answer[12],
-    filler_answer[12],
-    filler_answer[12],
-    filler_answer[12],
-    filler_answer[13],
-    filler_answer[13],
-    filler_answer[13],
-    filler_answer[13],
-  //id13
-
-    filler_answer[14],
-    filler_answer[14],
-    filler_answer[14],
-    filler_answer[14],
-    filler_answer[15],
-    filler_answer[15],
-    filler_answer[15],
-    filler_answer[15],
-  //id14
-
-    filler_answer[16],
-    filler_answer[16],
-    filler_answer[16],
-    filler_answer[16],
-    filler_answer[17],
-    filler_answer[17],
-    filler_answer[17],
-    filler_answer[17],
-  //id15
-];
-const filler_conclusion_ordered = [
-
-    filler_conclusion[0],
-    filler_conclusion[0],
-    filler_conclusion[0],
-    filler_conclusion[0],
-    filler_conclusion[0],
-    filler_conclusion[0],
-    filler_conclusion[0],
-    filler_conclusion[0],
-  //id7
-
-    filler_conclusion[1],
-    filler_conclusion[1],
-    filler_conclusion[1],
-    filler_conclusion[1],
-    filler_conclusion[1],
-    filler_conclusion[1],
-    filler_conclusion[1],
-    filler_conclusion[1],
-  //id8
-
-    filler_conclusion[2],
-    filler_conclusion[2],
-    filler_conclusion[2],
-    filler_conclusion[2],
-    filler_conclusion[2],
-    filler_conclusion[2],
-    filler_conclusion[2],
-    filler_conclusion[2],
-  //id9
-
-    filler_conclusion[3],
-    filler_conclusion[3],
-    filler_conclusion[3],
-    filler_conclusion[3],
-    filler_conclusion[3],
-    filler_conclusion[3],
-    filler_conclusion[3],
-    filler_conclusion[3],
-  //id10
-
-    filler_conclusion[4],
-    filler_conclusion[4],
-    filler_conclusion[4],
-    filler_conclusion[4],
-    filler_conclusion[4],
-    filler_conclusion[4],
-    filler_conclusion[4],
-    filler_conclusion[4],
-  //id11
-
-    filler_conclusion[5],
-    filler_conclusion[5],
-    filler_conclusion[5],
-    filler_conclusion[5],
-    filler_conclusion[5],
-    filler_conclusion[5],
-    filler_conclusion[5],
-    filler_conclusion[5],
-  //id12
-
-    filler_conclusion[6],
-    filler_conclusion[6],
-    filler_conclusion[6],
-    filler_conclusion[6],
-    filler_conclusion[6],
-    filler_conclusion[6],
-    filler_conclusion[6],
-    filler_conclusion[6],
-  //id13
-
-    filler_conclusion[7],
-    filler_conclusion[7],
-    filler_conclusion[7],
-    filler_conclusion[7],
-    filler_conclusion[7],
-    filler_conclusion[7],
-    filler_conclusion[7],
-    filler_conclusion[7],
-  //id14
-
-    filler_conclusion[8],
-    filler_conclusion[8],
-    filler_conclusion[8],
-    filler_conclusion[8],
-    filler_conclusion[8],
-    filler_conclusion[8],
-    filler_conclusion[8],
-    filler_conclusion[8],
-  //id15
-];
 
 //randomize fillers with custom function
 const flat_filler_question = shuffle_filler_quest(shuffled_indices);
