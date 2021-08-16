@@ -1561,7 +1561,7 @@ const filler_conclusion = [
       type: 'filler-implau',
       id:2,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness thinks that the number of the balloons she saw flying in the air is considerably high.',
+      question: 'The witness thinks that the number of the balloons she saw flying in the air is comparably high.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
@@ -1626,7 +1626,7 @@ const filler_conclusion = [
       type: 'filler-plau',
       id:1,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness thinks that the number of bread slices is considerably low.',
+      question: 'The witness thinks that the number of bread slices is comparably low.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
@@ -1707,7 +1707,7 @@ const filler_conclusion = [
       type: 'filler-plau',
       id:2,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness thinks that the number of the balloons flying in the air is considerably low.',
+      question: 'The witness thinks that the number of the balloons flying in the air is comparably low.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
@@ -1845,7 +1845,7 @@ const filler_conclusion = [
       type: 'filler-implau',
       id:1,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness thinks that the number of the bread slices she saw on the kitchen counter is considerably high.',
+      question: 'The witness thinks that the number of the bread slices she saw on the kitchen counter is comparably high.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
@@ -1853,7 +1853,7 @@ const filler_conclusion = [
       type: 'filler-implau',
       id:2,
       QUD: ['Based on this, the judge concludes:', 'How justified is the judge in drawing that conclusion?'],
-      question: 'The witness thinks that the number of the balloons she saw flying in the air is considerably high.',
+      question: 'The witness thinks that the number of the balloons she saw flying in the air is comparably high.',
       optionLeft: 'not justifiable at all',
       optionRight: 'strongly justifiable',
     }, //0
