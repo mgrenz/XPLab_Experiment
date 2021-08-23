@@ -376,18 +376,26 @@ as_tibble(fig)</code></pre>
 mod &lt;- sel
 mod$response &lt;- factor(sel$response)
 mod$condition.x &lt;- factor(sel$condition.x)
-mod$condition.y &lt;- factor(sel$condition.y)</code></pre>
+mod$condition.y &lt;- factor(sel$condition.y)
+glimpse(mod)</code></pre>
+<pre><code>## Rows: 972
+## Columns: 6
+## $ submission_id &lt;dbl&gt; 2438, 2435, 2434, 2438, 2435, 2434, 2438, 2435, 2434, 24…
+## $ trial_number  &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3,…
+## $ condition.x   &lt;fct&gt; HOWMANY, HOWMANY, HOWMANY, HOWMANY, HOWMANY, HOWMANY, HO…
+## $ condition.y   &lt;fct&gt; SUP, SUP, SUP, COMP, COMP, COMP, SUP, SUP, SUP, SUP, SUP…
+## $ response      &lt;fct&gt; 2, 3, 5, 2, 3, 5, 2, 3, 5, 2, 3, 5, 2, 3, 5, 2, 3, 5, 2,…
+## $ id            &lt;dbl&gt; 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4,…</code></pre>
+<pre class="r"><code>#set reference level
+mod &lt;- within(mod, condition.x &lt;- relevel(condition.x, ref = &quot;POLAR&quot;), condition.y &lt;- relevel(condition.y, ref = &quot;COMP&quot;))</code></pre>
 </div>
 <div id="models" class="section level2">
 <h2>Models</h2>
-<div id="entire-dataset" class="section level3">
-<h3>Entire dataset</h3>
-<p><strong>QUESTION: When using the models, HOWMANY and COMP are never listed as Coefficients !!!</strong></p>
 <pre class="r"><code># main effect
-# entire dataset
 fm1 &lt;- clmm(
   formula = response ~ condition.x + condition.y + (1|submission_id) + (1|id),
-  data = mod
+  data = mod,
+  link = &quot;probit&quot;,
 )
 summary(fm1)</code></pre>
 <pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
@@ -396,34 +404,34 @@ summary(fm1)</code></pre>
 ##     (1 | id)
 ## data:    mod
 ## 
-##  link  threshold nobs logLik   AIC     niter       max.grad cond.H 
-##  logit flexible  972  -1353.89 2725.77 2683(10940) 2.64e-01 1.9e+03
+##  link   threshold nobs logLik   AIC     niter      max.grad cond.H 
+##  probit flexible  972  -1386.09 2790.18 1606(4821) 5.65e-04 1.3e+03
 ## 
 ## Random effects:
 ##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01286  0.1134  
-##  submission_id (Intercept) 2.28569  1.5118  
+##  id            (Intercept) 0.007192 0.0848  
+##  submission_id (Intercept) 0.484749 0.6962  
 ## Number of groups:  id 6,  submission_id 3 
 ## 
 ## Coefficients:
-##                  Estimate Std. Error z value Pr(&gt;|z|)   
-## condition.xPOLAR  -0.4581     0.1460  -3.138  0.00170 **
-## condition.xWHAT   -0.2230     0.1445  -1.543  0.12284   
-## condition.ySUP    -0.3060     0.1188  -2.576  0.00998 **
+##                    Estimate Std. Error z value Pr(&gt;|z|)    
+## condition.xHOWMANY  0.23841    0.08664   2.752  0.00593 ** 
+## condition.xWHAT     0.12074    0.08649   1.396  0.16271    
+## condition.ySUP     -0.23538    0.07069  -3.330  0.00087 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Threshold coefficients:
 ##     Estimate Std. Error z value
-## 1|2 -2.09972    0.90035  -2.332
-## 2|3 -1.08144    0.89892  -1.203
-## 3|4 -0.03182    0.89891  -0.035
-## 4|5  1.12580    0.90146   1.249</code></pre>
-<pre class="r"><code># interaction effects :
-# entire data set
+## 1|2  -0.9394     0.4111  -2.285
+## 2|3  -0.3628     0.4108  -0.883
+## 3|4   0.2354     0.4111   0.573
+## 4|5   0.8142     0.4119   1.977</code></pre>
+<pre class="r"><code># interaction effects
 fm2 &lt;- clmm(
   formula = response ~ condition.x * condition.y + (1|submission_id) + (1|id),
-  data = mod
+  data = mod,
+  link = &quot;probit&quot;,
 )
 summary(fm2)</code></pre>
 <pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
@@ -432,276 +440,35 @@ summary(fm2)</code></pre>
 ##     (1 | id)
 ## data:    mod
 ## 
-##  link  threshold nobs logLik   AIC     niter      max.grad cond.H 
-##  logit flexible  972  -1353.75 2729.50 1160(4859) 2.13e-04 1.8e+03
+##  link   threshold nobs logLik   AIC     niter      max.grad cond.H 
+##  probit flexible  972  -1385.87 2793.73 2034(6102) 6.37e-03 1.3e+03
 ## 
 ## Random effects:
 ##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01284  0.1133  
-##  submission_id (Intercept) 2.18655  1.4787  
+##  id            (Intercept) 0.007202 0.08487 
+##  submission_id (Intercept) 0.485155 0.69653 
 ## Number of groups:  id 6,  submission_id 3 
 ## 
 ## Coefficients:
-##                                 Estimate Std. Error z value Pr(&gt;|z|)  
-## condition.xPOLAR                -0.52116    0.20263  -2.572   0.0101 *
-## condition.xWHAT                 -0.22862    0.19577  -1.168   0.2429  
-## condition.ySUP                  -0.35189    0.20512  -1.716   0.0863 .
-## condition.xPOLAR:condition.ySUP  0.12223    0.29111   0.420   0.6746  
-## condition.xWHAT:condition.ySUP   0.01031    0.29001   0.036   0.9717  
+##                                   Estimate Std. Error z value Pr(&gt;|z|)  
+## condition.xHOWMANY                 0.29541    0.12296   2.402   0.0163 *
+## condition.xWHAT                    0.16477    0.12578   1.310   0.1902  
+## condition.ySUP                    -0.17066    0.12319  -1.385   0.1660  
+## condition.xHOWMANY:condition.ySUP -0.11167    0.17327  -0.644   0.5193  
+## condition.xWHAT:condition.ySUP    -0.08118    0.17321  -0.469   0.6393  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Threshold coefficients:
 ##     Estimate Std. Error z value
-## 1|2  -2.3237     0.8694  -2.673
-## 2|3  -1.3058     0.8678  -1.505
-## 3|4  -0.2553     0.8672  -0.294
-## 4|5   0.9023     0.8684   1.039</code></pre>
+## 1|2  -0.9039     0.4149  -2.179
+## 2|3  -0.3272     0.4147  -0.789
+## 3|4   0.2713     0.4150   0.654
+## 4|5   0.8504     0.4158   2.045</code></pre>
 </div>
-<div id="subsets-by-qud-type" class="section level3">
-<h3>Subsets by QUD type</h3>
-<p>Main Effects</p>
-<p><strong>QUESTION: Error in subset function ?!?! values stay the same for every subset</strong></p>
-<pre class="r"><code># main effect
-# subset POLAR
-fm3 &lt;- clmm(
-  formula = response ~ condition.x + condition.y + (1|submission_id) + (1|id),
-  data = mod,
-  subset = levels(condition.x == &quot;POLAR&quot;)
-)
-summary(fm3)</code></pre>
-<pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
-## 
-## formula: response ~ condition.x + condition.y + (1 | submission_id) +  
-##     (1 | id)
-## data:    mod
-## subset:  levels(condition.x == &quot;POLAR&quot;)
-## 
-##  link  threshold nobs logLik   AIC     niter       max.grad cond.H 
-##  logit flexible  972  -1353.89 2725.77 2683(10940) 2.64e-01 1.9e+03
-## 
-## Random effects:
-##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01286  0.1134  
-##  submission_id (Intercept) 2.28569  1.5118  
-## Number of groups:  id 6,  submission_id 3 
-## 
-## Coefficients:
-##                  Estimate Std. Error z value Pr(&gt;|z|)   
-## condition.xPOLAR  -0.4581     0.1460  -3.138  0.00170 **
-## condition.xWHAT   -0.2230     0.1445  -1.543  0.12284   
-## condition.ySUP    -0.3060     0.1188  -2.576  0.00998 **
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Threshold coefficients:
-##     Estimate Std. Error z value
-## 1|2 -2.09972    0.90035  -2.332
-## 2|3 -1.08144    0.89892  -1.203
-## 3|4 -0.03182    0.89891  -0.035
-## 4|5  1.12580    0.90146   1.249</code></pre>
-<pre class="r"><code># main effect
-# subset WHAT
-fm4 &lt;- clmm(
-  formula = response ~ condition.x + condition.y + (1|submission_id) + (1|id),
-  data = mod,
-  subset = levels(condition.x == &quot;WHAT&quot;)
-)
-summary(fm4)</code></pre>
-<pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
-## 
-## formula: response ~ condition.x + condition.y + (1 | submission_id) +  
-##     (1 | id)
-## data:    mod
-## subset:  levels(condition.x == &quot;WHAT&quot;)
-## 
-##  link  threshold nobs logLik   AIC     niter       max.grad cond.H 
-##  logit flexible  972  -1353.89 2725.77 2683(10940) 2.64e-01 1.9e+03
-## 
-## Random effects:
-##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01286  0.1134  
-##  submission_id (Intercept) 2.28569  1.5118  
-## Number of groups:  id 6,  submission_id 3 
-## 
-## Coefficients:
-##                  Estimate Std. Error z value Pr(&gt;|z|)   
-## condition.xPOLAR  -0.4581     0.1460  -3.138  0.00170 **
-## condition.xWHAT   -0.2230     0.1445  -1.543  0.12284   
-## condition.ySUP    -0.3060     0.1188  -2.576  0.00998 **
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Threshold coefficients:
-##     Estimate Std. Error z value
-## 1|2 -2.09972    0.90035  -2.332
-## 2|3 -1.08144    0.89892  -1.203
-## 3|4 -0.03182    0.89891  -0.035
-## 4|5  1.12580    0.90146   1.249</code></pre>
-<pre class="r"><code># main effect
-# subset HOWMANY
-fm5 &lt;- clmm(
-  formula = response ~ condition.x + condition.y + (1|submission_id) + (1|id),
-  data = mod,
-  subset = levels(condition.x == &quot;HOWMANY&quot;)
-)
-summary(fm5)</code></pre>
-<pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
-## 
-## formula: response ~ condition.x + condition.y + (1 | submission_id) +  
-##     (1 | id)
-## data:    mod
-## subset:  levels(condition.x == &quot;HOWMANY&quot;)
-## 
-##  link  threshold nobs logLik   AIC     niter       max.grad cond.H 
-##  logit flexible  972  -1353.89 2725.77 2683(10940) 2.64e-01 1.9e+03
-## 
-## Random effects:
-##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01286  0.1134  
-##  submission_id (Intercept) 2.28569  1.5118  
-## Number of groups:  id 6,  submission_id 3 
-## 
-## Coefficients:
-##                  Estimate Std. Error z value Pr(&gt;|z|)   
-## condition.xPOLAR  -0.4581     0.1460  -3.138  0.00170 **
-## condition.xWHAT   -0.2230     0.1445  -1.543  0.12284   
-## condition.ySUP    -0.3060     0.1188  -2.576  0.00998 **
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Threshold coefficients:
-##     Estimate Std. Error z value
-## 1|2 -2.09972    0.90035  -2.332
-## 2|3 -1.08144    0.89892  -1.203
-## 3|4 -0.03182    0.89891  -0.035
-## 4|5  1.12580    0.90146   1.249</code></pre>
-<p>Interaction Effects</p>
-<pre class="r"><code># interaction effect
-# subset POLAR
-fm6 &lt;- clmm(
-  formula = response ~ condition.x * condition.y + (1|submission_id) + (1|id),
-  data = mod,
-  subset = levels(condition.x == &quot;POLAR&quot;)
-)
-summary(fm6)</code></pre>
-<pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
-## 
-## formula: response ~ condition.x * condition.y + (1 | submission_id) +  
-##     (1 | id)
-## data:    mod
-## subset:  levels(condition.x == &quot;POLAR&quot;)
-## 
-##  link  threshold nobs logLik   AIC     niter      max.grad cond.H 
-##  logit flexible  972  -1353.75 2729.50 1160(4859) 2.13e-04 1.8e+03
-## 
-## Random effects:
-##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01284  0.1133  
-##  submission_id (Intercept) 2.18655  1.4787  
-## Number of groups:  id 6,  submission_id 3 
-## 
-## Coefficients:
-##                                 Estimate Std. Error z value Pr(&gt;|z|)  
-## condition.xPOLAR                -0.52116    0.20263  -2.572   0.0101 *
-## condition.xWHAT                 -0.22862    0.19577  -1.168   0.2429  
-## condition.ySUP                  -0.35189    0.20512  -1.716   0.0863 .
-## condition.xPOLAR:condition.ySUP  0.12223    0.29111   0.420   0.6746  
-## condition.xWHAT:condition.ySUP   0.01031    0.29001   0.036   0.9717  
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Threshold coefficients:
-##     Estimate Std. Error z value
-## 1|2  -2.3237     0.8694  -2.673
-## 2|3  -1.3058     0.8678  -1.505
-## 3|4  -0.2553     0.8672  -0.294
-## 4|5   0.9023     0.8684   1.039</code></pre>
-<pre class="r"><code># interaction effect
-# subset WHAT
-fm7 &lt;- clmm(
-  formula = response ~ condition.x * condition.y + (1|submission_id) + (1|id),
-  data = mod,
-  subset = levels(condition.x == &quot;WHAT&quot;)
-)
-summary(fm7)</code></pre>
-<pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
-## 
-## formula: response ~ condition.x * condition.y + (1 | submission_id) +  
-##     (1 | id)
-## data:    mod
-## subset:  levels(condition.x == &quot;WHAT&quot;)
-## 
-##  link  threshold nobs logLik   AIC     niter      max.grad cond.H 
-##  logit flexible  972  -1353.75 2729.50 1160(4859) 2.13e-04 1.8e+03
-## 
-## Random effects:
-##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01284  0.1133  
-##  submission_id (Intercept) 2.18655  1.4787  
-## Number of groups:  id 6,  submission_id 3 
-## 
-## Coefficients:
-##                                 Estimate Std. Error z value Pr(&gt;|z|)  
-## condition.xPOLAR                -0.52116    0.20263  -2.572   0.0101 *
-## condition.xWHAT                 -0.22862    0.19577  -1.168   0.2429  
-## condition.ySUP                  -0.35189    0.20512  -1.716   0.0863 .
-## condition.xPOLAR:condition.ySUP  0.12223    0.29111   0.420   0.6746  
-## condition.xWHAT:condition.ySUP   0.01031    0.29001   0.036   0.9717  
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Threshold coefficients:
-##     Estimate Std. Error z value
-## 1|2  -2.3237     0.8694  -2.673
-## 2|3  -1.3058     0.8678  -1.505
-## 3|4  -0.2553     0.8672  -0.294
-## 4|5   0.9023     0.8684   1.039</code></pre>
-<pre class="r"><code># interaction effects
-# subset HOWMANY
-fm8 &lt;- clmm(
-  formula = response ~ condition.x * condition.y + (1|submission_id) + (1|id),
-  data = mod,
-  subset = levels(condition.y == &quot;HOWMANY&quot;)
-)
-summary(fm8)</code></pre>
-<pre><code>## Cumulative Link Mixed Model fitted with the Laplace approximation
-## 
-## formula: response ~ condition.x * condition.y + (1 | submission_id) +  
-##     (1 | id)
-## data:    mod
-## subset:  levels(condition.y == &quot;HOWMANY&quot;)
-## 
-##  link  threshold nobs logLik   AIC     niter      max.grad cond.H 
-##  logit flexible  972  -1353.75 2729.50 1160(4859) 2.13e-04 1.8e+03
-## 
-## Random effects:
-##  Groups        Name        Variance Std.Dev.
-##  id            (Intercept) 0.01284  0.1133  
-##  submission_id (Intercept) 2.18655  1.4787  
-## Number of groups:  id 6,  submission_id 3 
-## 
-## Coefficients:
-##                                 Estimate Std. Error z value Pr(&gt;|z|)  
-## condition.xPOLAR                -0.52116    0.20263  -2.572   0.0101 *
-## condition.xWHAT                 -0.22862    0.19577  -1.168   0.2429  
-## condition.ySUP                  -0.35189    0.20512  -1.716   0.0863 .
-## condition.xPOLAR:condition.ySUP  0.12223    0.29111   0.420   0.6746  
-## condition.xWHAT:condition.ySUP   0.01031    0.29001   0.036   0.9717  
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Threshold coefficients:
-##     Estimate Std. Error z value
-## 1|2  -2.3237     0.8694  -2.673
-## 2|3  -1.3058     0.8678  -1.505
-## 3|4  -0.2553     0.8672  -0.294
-## 4|5   0.9023     0.8684   1.039</code></pre>
-</div>
-</div>
-<div id="lr-test" class="section level1">
-<h1>LR test</h1>
-<pre class="r"><code># likelihood ratio test: interaction vs main effect model (entire dataset)
+<div id="lr-test" class="section level2">
+<h2>LR test</h2>
+<pre class="r"><code># likelihood ratio test: interaction vs main effect model
 main &lt;- fm1
 inter &lt;- fm2
 
@@ -713,8 +480,8 @@ lrtest(main, inter)</code></pre>
 ## Model 2: response ~ condition.x * condition.y + (1 | submission_id) + 
 ##     (1 | id)
 ##   #Df  LogLik Df  Chisq Pr(&gt;Chisq)
-## 1   9 -1353.9                     
-## 2  11 -1353.8  2 0.2735     0.8722</code></pre>
+## 1   9 -1386.1                     
+## 2  11 -1385.9  2 0.4428     0.8014</code></pre>
 </div>
 
 
