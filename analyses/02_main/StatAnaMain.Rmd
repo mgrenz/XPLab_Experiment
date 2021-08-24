@@ -1,7 +1,7 @@
 ---
 title: "Statistical Analyses Script for the replication of 'Ignorance in context: The interaction of modified numerals and QUDs' (Westera & Brasoveanu, 2014)"
 author: "Merlin Marinova, Johanna Venzke, Esma Sakalli and Mae Grenz"
-date: "16/10/2021"
+date: "24/8/2021"
 output: html_document
 ---
 This script includes the preprocessing and analyses preregistered for our replication of the study by Westera & Brasoveanu "Ignorance in context: The interaction of modified numerals and QUDs" (2014).
@@ -92,9 +92,9 @@ fig <- aggregate(sel[, 5], list(sel$condition.x, sel$condition.y), mean)
 as_tibble(fig)
 ```
 
-
+## Mean validity judgements
 ``` {r init plot}
-ggplot(fig, aes(x = Group.1, y = response, colour = Group.2)) + geom_point()
+ggplot(fig, aes(x = Group.1, y = response, colour = Group.2)) + geom_point() + labs(title = "Validity judgements", colour = "MOD type", x = "QUD type", y = "Mean judgement")
 ```
 
 ``` {r factors}
