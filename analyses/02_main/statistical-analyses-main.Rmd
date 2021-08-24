@@ -91,10 +91,10 @@ as_tibble(sel)
 fig <- aggregate(sel[, 5], list(sel$condition.x, sel$condition.y), mean)
 as_tibble(fig)
 ```
-
 ## Mean validity judgements
 ``` {r init plot}
 ggplot(fig, aes(x = Group.1, y = response, colour = Group.2)) + geom_point() + labs(title = "Validity judgements", colour = "MOD type", x = "QUD type", y = "Mean judgement")
+ggsave("mean-validity-judgement.jpeg")
 ```
 
 ``` {r factors}
